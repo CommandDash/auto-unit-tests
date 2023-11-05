@@ -1,4 +1,4 @@
-name: run-flutter-test
+name: run-unit-test
 on: 
   push:
     branches:
