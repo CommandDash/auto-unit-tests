@@ -10,11 +10,13 @@ import 'package:pic_connect/domain/models/post.dart';
 import 'package:pic_connect/domain/usecase/get_user_details_use_case.dart';
 import 'package:pic_connect/domain/usecase/publish_post_use_case.dart';
 import 'package:pic_connect/utils/geolocator.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
 part 'add_post_event.dart';
 part 'add_post_state.dart';
 part 'add_post_bloc.freezed.dart';
 
+@Welltested()
 class AddPostBloc extends Bloc<AddPostEvent, AddPostState> {
   final GetUserDetailsUseCase getUserDetailsUseCase;
   final PublishPostUseCase publishPostUseCase;
@@ -30,6 +32,14 @@ class AddPostBloc extends Bloc<AddPostEvent, AddPostState> {
     on<OnPublishAsStoryMomentEvent>(onPublishAsStoryMomentEventHandler);
   }
 
+  @Testcases([
+    'Should update the state with the provided isStoryMoment value when onPublishAsStoryMomentEventHandler is called',
+    'Should not update any other state properties except isStoryMoment when onPublishAsStoryMomentEventHandler is called',
+    'Should handle the case when the event is null',
+    'Should handle the case when the state is null',
+    'Should handle the case when the event and state are both null',
+    'Should handle the case when the event is not of type OnPublishAsStoryMomentEvent',
+  ])
   FutureOr<void> onPublishAsStoryMomentEventHandler(
       OnPublishAsStoryMomentEvent event, Emitter<AddPostState> emit) async {
     emit(state.copyWith(isStoryMoment: event.isStoryMoment));

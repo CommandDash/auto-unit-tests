@@ -2,11 +2,10 @@ part of 'signin_bloc.dart';
 
 @freezed
 class SignInState with _$SignInState {
-  const factory SignInState({
-    final String? email,
-    final String? password,
-    @Default(false) final bool isLoginSuccess,
-    @Default(false) final bool isLoading,
-    final String? errorMessage
-  }) = _SignUpState;
+  const factory SignInState(
+      {final String? email,
+      final String? password,
+      @Default(false) final bool isLoginSuccess,
+      @Default(false) final bool isLoading,
+      final String? errorMessage}) = _SignUpState;
 }

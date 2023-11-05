@@ -81,20 +81,20 @@ class _$ReelsEventCopyWithImpl<$Res, $Val extends ReelsEvent>
 }
 
 /// @nodoc
-abstract class _$$OnLoadTopReelsEventCopyWith<$Res> {
-  factory _$$OnLoadTopReelsEventCopyWith(_$OnLoadTopReelsEvent value,
-          $Res Function(_$OnLoadTopReelsEvent) then) =
-      __$$OnLoadTopReelsEventCopyWithImpl<$Res>;
+abstract class _$$OnLoadTopReelsEventImplCopyWith<$Res> {
+  factory _$$OnLoadTopReelsEventImplCopyWith(_$OnLoadTopReelsEventImpl value,
+          $Res Function(_$OnLoadTopReelsEventImpl) then) =
+      __$$OnLoadTopReelsEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String authUserUid});
 }
 
 /// @nodoc
-class __$$OnLoadTopReelsEventCopyWithImpl<$Res>
-    extends _$ReelsEventCopyWithImpl<$Res, _$OnLoadTopReelsEvent>
-    implements _$$OnLoadTopReelsEventCopyWith<$Res> {
-  __$$OnLoadTopReelsEventCopyWithImpl(
-      _$OnLoadTopReelsEvent _value, $Res Function(_$OnLoadTopReelsEvent) _then)
+class __$$OnLoadTopReelsEventImplCopyWithImpl<$Res>
+    extends _$ReelsEventCopyWithImpl<$Res, _$OnLoadTopReelsEventImpl>
+    implements _$$OnLoadTopReelsEventImplCopyWith<$Res> {
+  __$$OnLoadTopReelsEventImplCopyWithImpl(_$OnLoadTopReelsEventImpl _value,
+      $Res Function(_$OnLoadTopReelsEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -102,7 +102,7 @@ class __$$OnLoadTopReelsEventCopyWithImpl<$Res>
   $Res call({
     Object? authUserUid = null,
   }) {
-    return _then(_$OnLoadTopReelsEvent(
+    return _then(_$OnLoadTopReelsEventImpl(
       null == authUserUid
           ? _value.authUserUid
           : authUserUid // ignore: cast_nullable_to_non_nullable
@@ -113,8 +113,8 @@ class __$$OnLoadTopReelsEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadTopReelsEvent implements OnLoadTopReelsEvent {
-  const _$OnLoadTopReelsEvent(this.authUserUid);
+class _$OnLoadTopReelsEventImpl implements OnLoadTopReelsEvent {
+  const _$OnLoadTopReelsEventImpl(this.authUserUid);
 
   @override
   final String authUserUid;
@@ -128,7 +128,7 @@ class _$OnLoadTopReelsEvent implements OnLoadTopReelsEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadTopReelsEvent &&
+            other is _$OnLoadTopReelsEventImpl &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid));
   }
@@ -139,8 +139,8 @@ class _$OnLoadTopReelsEvent implements OnLoadTopReelsEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadTopReelsEventCopyWith<_$OnLoadTopReelsEvent> get copyWith =>
-      __$$OnLoadTopReelsEventCopyWithImpl<_$OnLoadTopReelsEvent>(
+  _$$OnLoadTopReelsEventImplCopyWith<_$OnLoadTopReelsEventImpl> get copyWith =>
+      __$$OnLoadTopReelsEventImplCopyWithImpl<_$OnLoadTopReelsEventImpl>(
           this, _$identity);
 
   @override
@@ -214,29 +214,29 @@ class _$OnLoadTopReelsEvent implements OnLoadTopReelsEvent {
 
 abstract class OnLoadTopReelsEvent implements ReelsEvent {
   const factory OnLoadTopReelsEvent(final String authUserUid) =
-      _$OnLoadTopReelsEvent;
+      _$OnLoadTopReelsEventImpl;
 
   String get authUserUid;
   @JsonKey(ignore: true)
-  _$$OnLoadTopReelsEventCopyWith<_$OnLoadTopReelsEvent> get copyWith =>
+  _$$OnLoadTopReelsEventImplCopyWith<_$OnLoadTopReelsEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnLikePostEventCopyWith<$Res> {
-  factory _$$OnLikePostEventCopyWith(
-          _$OnLikePostEvent value, $Res Function(_$OnLikePostEvent) then) =
-      __$$OnLikePostEventCopyWithImpl<$Res>;
+abstract class _$$OnLikePostEventImplCopyWith<$Res> {
+  factory _$$OnLikePostEventImplCopyWith(_$OnLikePostEventImpl value,
+          $Res Function(_$OnLikePostEventImpl) then) =
+      __$$OnLikePostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnLikePostEventCopyWithImpl<$Res>
-    extends _$ReelsEventCopyWithImpl<$Res, _$OnLikePostEvent>
-    implements _$$OnLikePostEventCopyWith<$Res> {
-  __$$OnLikePostEventCopyWithImpl(
-      _$OnLikePostEvent _value, $Res Function(_$OnLikePostEvent) _then)
+class __$$OnLikePostEventImplCopyWithImpl<$Res>
+    extends _$ReelsEventCopyWithImpl<$Res, _$OnLikePostEventImpl>
+    implements _$$OnLikePostEventImplCopyWith<$Res> {
+  __$$OnLikePostEventImplCopyWithImpl(
+      _$OnLikePostEventImpl _value, $Res Function(_$OnLikePostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -244,7 +244,7 @@ class __$$OnLikePostEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnLikePostEvent(
+    return _then(_$OnLikePostEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -255,8 +255,8 @@ class __$$OnLikePostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLikePostEvent implements OnLikePostEvent {
-  const _$OnLikePostEvent(this.postId);
+class _$OnLikePostEventImpl implements OnLikePostEvent {
+  const _$OnLikePostEventImpl(this.postId);
 
   @override
   final String postId;
@@ -270,7 +270,7 @@ class _$OnLikePostEvent implements OnLikePostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLikePostEvent &&
+            other is _$OnLikePostEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -280,8 +280,9 @@ class _$OnLikePostEvent implements OnLikePostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLikePostEventCopyWith<_$OnLikePostEvent> get copyWith =>
-      __$$OnLikePostEventCopyWithImpl<_$OnLikePostEvent>(this, _$identity);
+  _$$OnLikePostEventImplCopyWith<_$OnLikePostEventImpl> get copyWith =>
+      __$$OnLikePostEventImplCopyWithImpl<_$OnLikePostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -353,29 +354,29 @@ class _$OnLikePostEvent implements OnLikePostEvent {
 }
 
 abstract class OnLikePostEvent implements ReelsEvent {
-  const factory OnLikePostEvent(final String postId) = _$OnLikePostEvent;
+  const factory OnLikePostEvent(final String postId) = _$OnLikePostEventImpl;
 
   String get postId;
   @JsonKey(ignore: true)
-  _$$OnLikePostEventCopyWith<_$OnLikePostEvent> get copyWith =>
+  _$$OnLikePostEventImplCopyWith<_$OnLikePostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnSaveBookmarkEventCopyWith<$Res> {
-  factory _$$OnSaveBookmarkEventCopyWith(_$OnSaveBookmarkEvent value,
-          $Res Function(_$OnSaveBookmarkEvent) then) =
-      __$$OnSaveBookmarkEventCopyWithImpl<$Res>;
+abstract class _$$OnSaveBookmarkEventImplCopyWith<$Res> {
+  factory _$$OnSaveBookmarkEventImplCopyWith(_$OnSaveBookmarkEventImpl value,
+          $Res Function(_$OnSaveBookmarkEventImpl) then) =
+      __$$OnSaveBookmarkEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
-    extends _$ReelsEventCopyWithImpl<$Res, _$OnSaveBookmarkEvent>
-    implements _$$OnSaveBookmarkEventCopyWith<$Res> {
-  __$$OnSaveBookmarkEventCopyWithImpl(
-      _$OnSaveBookmarkEvent _value, $Res Function(_$OnSaveBookmarkEvent) _then)
+class __$$OnSaveBookmarkEventImplCopyWithImpl<$Res>
+    extends _$ReelsEventCopyWithImpl<$Res, _$OnSaveBookmarkEventImpl>
+    implements _$$OnSaveBookmarkEventImplCopyWith<$Res> {
+  __$$OnSaveBookmarkEventImplCopyWithImpl(_$OnSaveBookmarkEventImpl _value,
+      $Res Function(_$OnSaveBookmarkEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -383,7 +384,7 @@ class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnSaveBookmarkEvent(
+    return _then(_$OnSaveBookmarkEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -394,8 +395,8 @@ class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
-  const _$OnSaveBookmarkEvent(this.postId);
+class _$OnSaveBookmarkEventImpl implements OnSaveBookmarkEvent {
+  const _$OnSaveBookmarkEventImpl(this.postId);
 
   @override
   final String postId;
@@ -409,7 +410,7 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnSaveBookmarkEvent &&
+            other is _$OnSaveBookmarkEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -419,8 +420,8 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnSaveBookmarkEventCopyWith<_$OnSaveBookmarkEvent> get copyWith =>
-      __$$OnSaveBookmarkEventCopyWithImpl<_$OnSaveBookmarkEvent>(
+  _$$OnSaveBookmarkEventImplCopyWith<_$OnSaveBookmarkEventImpl> get copyWith =>
+      __$$OnSaveBookmarkEventImplCopyWithImpl<_$OnSaveBookmarkEventImpl>(
           this, _$identity);
 
   @override
@@ -494,11 +495,11 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
 
 abstract class OnSaveBookmarkEvent implements ReelsEvent {
   const factory OnSaveBookmarkEvent(final String postId) =
-      _$OnSaveBookmarkEvent;
+      _$OnSaveBookmarkEventImpl;
 
   String get postId;
   @JsonKey(ignore: true)
-  _$$OnSaveBookmarkEventCopyWith<_$OnSaveBookmarkEvent> get copyWith =>
+  _$$OnSaveBookmarkEventImplCopyWith<_$OnSaveBookmarkEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -567,11 +568,11 @@ class _$ReelsStateCopyWithImpl<$Res, $Val extends ReelsState>
 }
 
 /// @nodoc
-abstract class _$$_ReelsStateCopyWith<$Res>
+abstract class _$$ReelsStateImplCopyWith<$Res>
     implements $ReelsStateCopyWith<$Res> {
-  factory _$$_ReelsStateCopyWith(
-          _$_ReelsState value, $Res Function(_$_ReelsState) then) =
-      __$$_ReelsStateCopyWithImpl<$Res>;
+  factory _$$ReelsStateImplCopyWith(
+          _$ReelsStateImpl value, $Res Function(_$ReelsStateImpl) then) =
+      __$$ReelsStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -582,11 +583,11 @@ abstract class _$$_ReelsStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ReelsStateCopyWithImpl<$Res>
-    extends _$ReelsStateCopyWithImpl<$Res, _$_ReelsState>
-    implements _$$_ReelsStateCopyWith<$Res> {
-  __$$_ReelsStateCopyWithImpl(
-      _$_ReelsState _value, $Res Function(_$_ReelsState) _then)
+class __$$ReelsStateImplCopyWithImpl<$Res>
+    extends _$ReelsStateCopyWithImpl<$Res, _$ReelsStateImpl>
+    implements _$$ReelsStateImplCopyWith<$Res> {
+  __$$ReelsStateImplCopyWithImpl(
+      _$ReelsStateImpl _value, $Res Function(_$ReelsStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -597,7 +598,7 @@ class __$$_ReelsStateCopyWithImpl<$Res>
     Object? authUserUid = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_ReelsState(
+    return _then(_$ReelsStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -620,8 +621,8 @@ class __$$_ReelsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReelsState implements _ReelsState {
-  const _$_ReelsState(
+class _$ReelsStateImpl implements _ReelsState {
+  const _$ReelsStateImpl(
       {this.isLoading = false,
       final List<PostBO> topReels = const [],
       this.authUserUid = "",
@@ -655,7 +656,7 @@ class _$_ReelsState implements _ReelsState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReelsState &&
+            other is _$ReelsStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other._topReels, _topReels) &&
@@ -676,8 +677,8 @@ class _$_ReelsState implements _ReelsState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReelsStateCopyWith<_$_ReelsState> get copyWith =>
-      __$$_ReelsStateCopyWithImpl<_$_ReelsState>(this, _$identity);
+  _$$ReelsStateImplCopyWith<_$ReelsStateImpl> get copyWith =>
+      __$$ReelsStateImplCopyWithImpl<_$ReelsStateImpl>(this, _$identity);
 }
 
 abstract class _ReelsState implements ReelsState {
@@ -685,7 +686,7 @@ abstract class _ReelsState implements ReelsState {
       {final bool isLoading,
       final List<PostBO> topReels,
       final String authUserUid,
-      final String? errorMessage}) = _$_ReelsState;
+      final String? errorMessage}) = _$ReelsStateImpl;
 
   @override
   bool get isLoading;
@@ -697,6 +698,6 @@ abstract class _ReelsState implements ReelsState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_ReelsStateCopyWith<_$_ReelsState> get copyWith =>
+  _$$ReelsStateImplCopyWith<_$ReelsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

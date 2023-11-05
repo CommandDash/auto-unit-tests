@@ -21,11 +21,11 @@ class UpdateUserUseCase extends BaseUseCase<UserBO, UpdateUserParams> {
         file: param.file,
         bio: param.bio,
         country: param.country,
-        birthDate: param.birthDate
-    );
+        birthDate: param.birthDate);
   }
 }
 
+// ignore: must_be_immutable
 class UpdateUserParams extends Equatable {
   String uid;
   String username;

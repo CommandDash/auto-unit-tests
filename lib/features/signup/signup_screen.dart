@@ -13,7 +13,22 @@ import 'package:pic_connect/utils/colors.dart';
 import 'package:pic_connect/utils/textfield_validation.dart';
 import 'package:pic_connect/utils/utils.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
+@Testcases([
+  'SignupScreen should show error snackbar when form validation fails',
+  'SignupScreen should show error snackbar when signup fails',
+  'SignupScreen should show success dialog when signup is successful',
+  'SignupScreen should navigate to verification screen when signup is successful',
+  'SignupScreen should show loading indicator when signup is in progress',
+  'SignupScreen should allow image selection from gallery for avatar',
+  'SignupScreen should validate username input',
+  'SignupScreen should validate email input',
+  'SignupScreen should validate password input',
+  'SignupScreen should validate repeat password input and check if it matches with password input',
+  "SignupScreen should navigate to sign in screen when 'Have an account' button is pressed",
+])
 class SignupScreen extends StatefulWidget {
   final VoidCallback onSignInPressed;
 
@@ -107,10 +122,7 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   List<Widget> _buildScreenStack(SignUpState state) {
-    final screenStack = [
-      _buildScreenBackground(),
-      _buildScreenContent(state)
-    ];
+    final screenStack = [_buildScreenBackground(), _buildScreenContent(state)];
     if (state.isLoading) {
       screenStack.add(CommonScreenProgressIndicator(
         backgroundColor: blackColor.withOpacity(0.5),
@@ -196,15 +208,16 @@ class _SignupScreenState extends State<SignupScreen> {
     );
   }
 
-  Widget _buildRepeatPasswordTextInput(
-      SignUpState state) {
+  Widget _buildRepeatPasswordTextInput(SignUpState state) {
     return TextFieldInput(
       hintText: _l10n.signUpRepeatPasswordTextInput,
       icon: const Icon(Icons.password, size: 16),
       textInputType: TextInputType.text,
       textEditingController: _repeatPasswordController,
       onValidate: (value) =>
-        value != null && value.isNotEmpty && _passwordController.value.text == value,
+          value != null &&
+          value.isNotEmpty &&
+          _passwordController.value.text == value,
       errorText: _l10n.signUpPasswordNotMatch,
       isPass: true,
     );

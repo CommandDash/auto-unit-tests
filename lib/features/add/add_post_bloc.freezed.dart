@@ -111,20 +111,20 @@ class _$AddPostEventCopyWithImpl<$Res, $Val extends AddPostEvent>
 }
 
 /// @nodoc
-abstract class _$$OnAddNewPostEventCopyWith<$Res> {
-  factory _$$OnAddNewPostEventCopyWith(
-          _$OnAddNewPostEvent value, $Res Function(_$OnAddNewPostEvent) then) =
-      __$$OnAddNewPostEventCopyWithImpl<$Res>;
+abstract class _$$OnAddNewPostEventImplCopyWith<$Res> {
+  factory _$$OnAddNewPostEventImplCopyWith(_$OnAddNewPostEventImpl value,
+          $Res Function(_$OnAddNewPostEventImpl) then) =
+      __$$OnAddNewPostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({PostTypeEnum postType, ImageSource imageSource, String userUid});
 }
 
 /// @nodoc
-class __$$OnAddNewPostEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnAddNewPostEvent>
-    implements _$$OnAddNewPostEventCopyWith<$Res> {
-  __$$OnAddNewPostEventCopyWithImpl(
-      _$OnAddNewPostEvent _value, $Res Function(_$OnAddNewPostEvent) _then)
+class __$$OnAddNewPostEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnAddNewPostEventImpl>
+    implements _$$OnAddNewPostEventImplCopyWith<$Res> {
+  __$$OnAddNewPostEventImplCopyWithImpl(_$OnAddNewPostEventImpl _value,
+      $Res Function(_$OnAddNewPostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -134,7 +134,7 @@ class __$$OnAddNewPostEventCopyWithImpl<$Res>
     Object? imageSource = null,
     Object? userUid = null,
   }) {
-    return _then(_$OnAddNewPostEvent(
+    return _then(_$OnAddNewPostEventImpl(
       null == postType
           ? _value.postType
           : postType // ignore: cast_nullable_to_non_nullable
@@ -153,10 +153,10 @@ class __$$OnAddNewPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnAddNewPostEvent
+class _$OnAddNewPostEventImpl
     with DiagnosticableTreeMixin
     implements OnAddNewPostEvent {
-  const _$OnAddNewPostEvent(this.postType, this.imageSource, this.userUid);
+  const _$OnAddNewPostEventImpl(this.postType, this.imageSource, this.userUid);
 
   @override
   final PostTypeEnum postType;
@@ -184,7 +184,7 @@ class _$OnAddNewPostEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnAddNewPostEvent &&
+            other is _$OnAddNewPostEventImpl &&
             (identical(other.postType, postType) ||
                 other.postType == postType) &&
             (identical(other.imageSource, imageSource) ||
@@ -198,8 +198,9 @@ class _$OnAddNewPostEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnAddNewPostEventCopyWith<_$OnAddNewPostEvent> get copyWith =>
-      __$$OnAddNewPostEventCopyWithImpl<_$OnAddNewPostEvent>(this, _$identity);
+  _$$OnAddNewPostEventImplCopyWith<_$OnAddNewPostEventImpl> get copyWith =>
+      __$$OnAddNewPostEventImplCopyWithImpl<_$OnAddNewPostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -304,31 +305,31 @@ abstract class OnAddNewPostEvent implements AddPostEvent {
   const factory OnAddNewPostEvent(
       final PostTypeEnum postType,
       final ImageSource imageSource,
-      final String userUid) = _$OnAddNewPostEvent;
+      final String userUid) = _$OnAddNewPostEventImpl;
 
   PostTypeEnum get postType;
   ImageSource get imageSource;
   String get userUid;
   @JsonKey(ignore: true)
-  _$$OnAddNewPostEventCopyWith<_$OnAddNewPostEvent> get copyWith =>
+  _$$OnAddNewPostEventImplCopyWith<_$OnAddNewPostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnPhotoSelectedEventCopyWith<$Res> {
-  factory _$$OnPhotoSelectedEventCopyWith(_$OnPhotoSelectedEvent value,
-          $Res Function(_$OnPhotoSelectedEvent) then) =
-      __$$OnPhotoSelectedEventCopyWithImpl<$Res>;
+abstract class _$$OnPhotoSelectedEventImplCopyWith<$Res> {
+  factory _$$OnPhotoSelectedEventImplCopyWith(_$OnPhotoSelectedEventImpl value,
+          $Res Function(_$OnPhotoSelectedEventImpl) then) =
+      __$$OnPhotoSelectedEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String imageFilePath});
 }
 
 /// @nodoc
-class __$$OnPhotoSelectedEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnPhotoSelectedEvent>
-    implements _$$OnPhotoSelectedEventCopyWith<$Res> {
-  __$$OnPhotoSelectedEventCopyWithImpl(_$OnPhotoSelectedEvent _value,
-      $Res Function(_$OnPhotoSelectedEvent) _then)
+class __$$OnPhotoSelectedEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnPhotoSelectedEventImpl>
+    implements _$$OnPhotoSelectedEventImplCopyWith<$Res> {
+  __$$OnPhotoSelectedEventImplCopyWithImpl(_$OnPhotoSelectedEventImpl _value,
+      $Res Function(_$OnPhotoSelectedEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -336,7 +337,7 @@ class __$$OnPhotoSelectedEventCopyWithImpl<$Res>
   $Res call({
     Object? imageFilePath = null,
   }) {
-    return _then(_$OnPhotoSelectedEvent(
+    return _then(_$OnPhotoSelectedEventImpl(
       null == imageFilePath
           ? _value.imageFilePath
           : imageFilePath // ignore: cast_nullable_to_non_nullable
@@ -347,10 +348,10 @@ class __$$OnPhotoSelectedEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnPhotoSelectedEvent
+class _$OnPhotoSelectedEventImpl
     with DiagnosticableTreeMixin
     implements OnPhotoSelectedEvent {
-  const _$OnPhotoSelectedEvent(this.imageFilePath);
+  const _$OnPhotoSelectedEventImpl(this.imageFilePath);
 
   @override
   final String imageFilePath;
@@ -372,7 +373,7 @@ class _$OnPhotoSelectedEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnPhotoSelectedEvent &&
+            other is _$OnPhotoSelectedEventImpl &&
             (identical(other.imageFilePath, imageFilePath) ||
                 other.imageFilePath == imageFilePath));
   }
@@ -383,9 +384,10 @@ class _$OnPhotoSelectedEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnPhotoSelectedEventCopyWith<_$OnPhotoSelectedEvent> get copyWith =>
-      __$$OnPhotoSelectedEventCopyWithImpl<_$OnPhotoSelectedEvent>(
-          this, _$identity);
+  _$$OnPhotoSelectedEventImplCopyWith<_$OnPhotoSelectedEventImpl>
+      get copyWith =>
+          __$$OnPhotoSelectedEventImplCopyWithImpl<_$OnPhotoSelectedEventImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -488,29 +490,29 @@ class _$OnPhotoSelectedEvent
 
 abstract class OnPhotoSelectedEvent implements AddPostEvent {
   const factory OnPhotoSelectedEvent(final String imageFilePath) =
-      _$OnPhotoSelectedEvent;
+      _$OnPhotoSelectedEventImpl;
 
   String get imageFilePath;
   @JsonKey(ignore: true)
-  _$$OnPhotoSelectedEventCopyWith<_$OnPhotoSelectedEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnPhotoSelectedEventImplCopyWith<_$OnPhotoSelectedEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnVideoSelectedEventCopyWith<$Res> {
-  factory _$$OnVideoSelectedEventCopyWith(_$OnVideoSelectedEvent value,
-          $Res Function(_$OnVideoSelectedEvent) then) =
-      __$$OnVideoSelectedEventCopyWithImpl<$Res>;
+abstract class _$$OnVideoSelectedEventImplCopyWith<$Res> {
+  factory _$$OnVideoSelectedEventImplCopyWith(_$OnVideoSelectedEventImpl value,
+          $Res Function(_$OnVideoSelectedEventImpl) then) =
+      __$$OnVideoSelectedEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String videoFilePath});
 }
 
 /// @nodoc
-class __$$OnVideoSelectedEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnVideoSelectedEvent>
-    implements _$$OnVideoSelectedEventCopyWith<$Res> {
-  __$$OnVideoSelectedEventCopyWithImpl(_$OnVideoSelectedEvent _value,
-      $Res Function(_$OnVideoSelectedEvent) _then)
+class __$$OnVideoSelectedEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnVideoSelectedEventImpl>
+    implements _$$OnVideoSelectedEventImplCopyWith<$Res> {
+  __$$OnVideoSelectedEventImplCopyWithImpl(_$OnVideoSelectedEventImpl _value,
+      $Res Function(_$OnVideoSelectedEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -518,7 +520,7 @@ class __$$OnVideoSelectedEventCopyWithImpl<$Res>
   $Res call({
     Object? videoFilePath = null,
   }) {
-    return _then(_$OnVideoSelectedEvent(
+    return _then(_$OnVideoSelectedEventImpl(
       null == videoFilePath
           ? _value.videoFilePath
           : videoFilePath // ignore: cast_nullable_to_non_nullable
@@ -529,10 +531,10 @@ class __$$OnVideoSelectedEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnVideoSelectedEvent
+class _$OnVideoSelectedEventImpl
     with DiagnosticableTreeMixin
     implements OnVideoSelectedEvent {
-  const _$OnVideoSelectedEvent(this.videoFilePath);
+  const _$OnVideoSelectedEventImpl(this.videoFilePath);
 
   @override
   final String videoFilePath;
@@ -554,7 +556,7 @@ class _$OnVideoSelectedEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnVideoSelectedEvent &&
+            other is _$OnVideoSelectedEventImpl &&
             (identical(other.videoFilePath, videoFilePath) ||
                 other.videoFilePath == videoFilePath));
   }
@@ -565,9 +567,10 @@ class _$OnVideoSelectedEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnVideoSelectedEventCopyWith<_$OnVideoSelectedEvent> get copyWith =>
-      __$$OnVideoSelectedEventCopyWithImpl<_$OnVideoSelectedEvent>(
-          this, _$identity);
+  _$$OnVideoSelectedEventImplCopyWith<_$OnVideoSelectedEventImpl>
+      get copyWith =>
+          __$$OnVideoSelectedEventImplCopyWithImpl<_$OnVideoSelectedEventImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -670,29 +673,29 @@ class _$OnVideoSelectedEvent
 
 abstract class OnVideoSelectedEvent implements AddPostEvent {
   const factory OnVideoSelectedEvent(final String videoFilePath) =
-      _$OnVideoSelectedEvent;
+      _$OnVideoSelectedEventImpl;
 
   String get videoFilePath;
   @JsonKey(ignore: true)
-  _$$OnVideoSelectedEventCopyWith<_$OnVideoSelectedEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnVideoSelectedEventImplCopyWith<_$OnVideoSelectedEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnUploadPostEventCopyWith<$Res> {
-  factory _$$OnUploadPostEventCopyWith(
-          _$OnUploadPostEvent value, $Res Function(_$OnUploadPostEvent) then) =
-      __$$OnUploadPostEventCopyWithImpl<$Res>;
+abstract class _$$OnUploadPostEventImplCopyWith<$Res> {
+  factory _$$OnUploadPostEventImplCopyWith(_$OnUploadPostEventImpl value,
+          $Res Function(_$OnUploadPostEventImpl) then) =
+      __$$OnUploadPostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String placeInfo, String description, List<String> tags});
 }
 
 /// @nodoc
-class __$$OnUploadPostEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnUploadPostEvent>
-    implements _$$OnUploadPostEventCopyWith<$Res> {
-  __$$OnUploadPostEventCopyWithImpl(
-      _$OnUploadPostEvent _value, $Res Function(_$OnUploadPostEvent) _then)
+class __$$OnUploadPostEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnUploadPostEventImpl>
+    implements _$$OnUploadPostEventImplCopyWith<$Res> {
+  __$$OnUploadPostEventImplCopyWithImpl(_$OnUploadPostEventImpl _value,
+      $Res Function(_$OnUploadPostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -702,7 +705,7 @@ class __$$OnUploadPostEventCopyWithImpl<$Res>
     Object? description = null,
     Object? tags = null,
   }) {
-    return _then(_$OnUploadPostEvent(
+    return _then(_$OnUploadPostEventImpl(
       null == placeInfo
           ? _value.placeInfo
           : placeInfo // ignore: cast_nullable_to_non_nullable
@@ -721,10 +724,10 @@ class __$$OnUploadPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUploadPostEvent
+class _$OnUploadPostEventImpl
     with DiagnosticableTreeMixin
     implements OnUploadPostEvent {
-  const _$OnUploadPostEvent(
+  const _$OnUploadPostEventImpl(
       this.placeInfo, this.description, final List<String> tags)
       : _tags = tags;
 
@@ -759,7 +762,7 @@ class _$OnUploadPostEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnUploadPostEvent &&
+            other is _$OnUploadPostEventImpl &&
             (identical(other.placeInfo, placeInfo) ||
                 other.placeInfo == placeInfo) &&
             (identical(other.description, description) ||
@@ -774,8 +777,9 @@ class _$OnUploadPostEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnUploadPostEventCopyWith<_$OnUploadPostEvent> get copyWith =>
-      __$$OnUploadPostEventCopyWithImpl<_$OnUploadPostEvent>(this, _$identity);
+  _$$OnUploadPostEventImplCopyWith<_$OnUploadPostEventImpl> get copyWith =>
+      __$$OnUploadPostEventImplCopyWithImpl<_$OnUploadPostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -877,32 +881,34 @@ class _$OnUploadPostEvent
 }
 
 abstract class OnUploadPostEvent implements AddPostEvent {
-  const factory OnUploadPostEvent(final String placeInfo,
-      final String description, final List<String> tags) = _$OnUploadPostEvent;
+  const factory OnUploadPostEvent(
+      final String placeInfo,
+      final String description,
+      final List<String> tags) = _$OnUploadPostEventImpl;
 
   String get placeInfo;
   String get description;
   List<String> get tags;
   @JsonKey(ignore: true)
-  _$$OnUploadPostEventCopyWith<_$OnUploadPostEvent> get copyWith =>
+  _$$OnUploadPostEventImplCopyWith<_$OnUploadPostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnEditedImageEventCopyWith<$Res> {
-  factory _$$OnEditedImageEventCopyWith(_$OnEditedImageEvent value,
-          $Res Function(_$OnEditedImageEvent) then) =
-      __$$OnEditedImageEventCopyWithImpl<$Res>;
+abstract class _$$OnEditedImageEventImplCopyWith<$Res> {
+  factory _$$OnEditedImageEventImplCopyWith(_$OnEditedImageEventImpl value,
+          $Res Function(_$OnEditedImageEventImpl) then) =
+      __$$OnEditedImageEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Uint8List imageData});
 }
 
 /// @nodoc
-class __$$OnEditedImageEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnEditedImageEvent>
-    implements _$$OnEditedImageEventCopyWith<$Res> {
-  __$$OnEditedImageEventCopyWithImpl(
-      _$OnEditedImageEvent _value, $Res Function(_$OnEditedImageEvent) _then)
+class __$$OnEditedImageEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnEditedImageEventImpl>
+    implements _$$OnEditedImageEventImplCopyWith<$Res> {
+  __$$OnEditedImageEventImplCopyWithImpl(_$OnEditedImageEventImpl _value,
+      $Res Function(_$OnEditedImageEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -910,7 +916,7 @@ class __$$OnEditedImageEventCopyWithImpl<$Res>
   $Res call({
     Object? imageData = null,
   }) {
-    return _then(_$OnEditedImageEvent(
+    return _then(_$OnEditedImageEventImpl(
       null == imageData
           ? _value.imageData
           : imageData // ignore: cast_nullable_to_non_nullable
@@ -921,10 +927,10 @@ class __$$OnEditedImageEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnEditedImageEvent
+class _$OnEditedImageEventImpl
     with DiagnosticableTreeMixin
     implements OnEditedImageEvent {
-  const _$OnEditedImageEvent(this.imageData);
+  const _$OnEditedImageEventImpl(this.imageData);
 
   @override
   final Uint8List imageData;
@@ -946,7 +952,7 @@ class _$OnEditedImageEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnEditedImageEvent &&
+            other is _$OnEditedImageEventImpl &&
             const DeepCollectionEquality().equals(other.imageData, imageData));
   }
 
@@ -957,8 +963,8 @@ class _$OnEditedImageEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnEditedImageEventCopyWith<_$OnEditedImageEvent> get copyWith =>
-      __$$OnEditedImageEventCopyWithImpl<_$OnEditedImageEvent>(
+  _$$OnEditedImageEventImplCopyWith<_$OnEditedImageEventImpl> get copyWith =>
+      __$$OnEditedImageEventImplCopyWithImpl<_$OnEditedImageEventImpl>(
           this, _$identity);
 
   @override
@@ -1062,31 +1068,31 @@ class _$OnEditedImageEvent
 
 abstract class OnEditedImageEvent implements AddPostEvent {
   const factory OnEditedImageEvent(final Uint8List imageData) =
-      _$OnEditedImageEvent;
+      _$OnEditedImageEventImpl;
 
   Uint8List get imageData;
   @JsonKey(ignore: true)
-  _$$OnEditedImageEventCopyWith<_$OnEditedImageEvent> get copyWith =>
+  _$$OnEditedImageEventImplCopyWith<_$OnEditedImageEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnPublishAsStoryMomentEventCopyWith<$Res> {
-  factory _$$OnPublishAsStoryMomentEventCopyWith(
-          _$OnPublishAsStoryMomentEvent value,
-          $Res Function(_$OnPublishAsStoryMomentEvent) then) =
-      __$$OnPublishAsStoryMomentEventCopyWithImpl<$Res>;
+abstract class _$$OnPublishAsStoryMomentEventImplCopyWith<$Res> {
+  factory _$$OnPublishAsStoryMomentEventImplCopyWith(
+          _$OnPublishAsStoryMomentEventImpl value,
+          $Res Function(_$OnPublishAsStoryMomentEventImpl) then) =
+      __$$OnPublishAsStoryMomentEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isStoryMoment});
 }
 
 /// @nodoc
-class __$$OnPublishAsStoryMomentEventCopyWithImpl<$Res>
-    extends _$AddPostEventCopyWithImpl<$Res, _$OnPublishAsStoryMomentEvent>
-    implements _$$OnPublishAsStoryMomentEventCopyWith<$Res> {
-  __$$OnPublishAsStoryMomentEventCopyWithImpl(
-      _$OnPublishAsStoryMomentEvent _value,
-      $Res Function(_$OnPublishAsStoryMomentEvent) _then)
+class __$$OnPublishAsStoryMomentEventImplCopyWithImpl<$Res>
+    extends _$AddPostEventCopyWithImpl<$Res, _$OnPublishAsStoryMomentEventImpl>
+    implements _$$OnPublishAsStoryMomentEventImplCopyWith<$Res> {
+  __$$OnPublishAsStoryMomentEventImplCopyWithImpl(
+      _$OnPublishAsStoryMomentEventImpl _value,
+      $Res Function(_$OnPublishAsStoryMomentEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1094,7 +1100,7 @@ class __$$OnPublishAsStoryMomentEventCopyWithImpl<$Res>
   $Res call({
     Object? isStoryMoment = null,
   }) {
-    return _then(_$OnPublishAsStoryMomentEvent(
+    return _then(_$OnPublishAsStoryMomentEventImpl(
       null == isStoryMoment
           ? _value.isStoryMoment
           : isStoryMoment // ignore: cast_nullable_to_non_nullable
@@ -1105,10 +1111,10 @@ class __$$OnPublishAsStoryMomentEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnPublishAsStoryMomentEvent
+class _$OnPublishAsStoryMomentEventImpl
     with DiagnosticableTreeMixin
     implements OnPublishAsStoryMomentEvent {
-  const _$OnPublishAsStoryMomentEvent(this.isStoryMoment);
+  const _$OnPublishAsStoryMomentEventImpl(this.isStoryMoment);
 
   @override
   final bool isStoryMoment;
@@ -1130,7 +1136,7 @@ class _$OnPublishAsStoryMomentEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnPublishAsStoryMomentEvent &&
+            other is _$OnPublishAsStoryMomentEventImpl &&
             (identical(other.isStoryMoment, isStoryMoment) ||
                 other.isStoryMoment == isStoryMoment));
   }
@@ -1141,9 +1147,9 @@ class _$OnPublishAsStoryMomentEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnPublishAsStoryMomentEventCopyWith<_$OnPublishAsStoryMomentEvent>
-      get copyWith => __$$OnPublishAsStoryMomentEventCopyWithImpl<
-          _$OnPublishAsStoryMomentEvent>(this, _$identity);
+  _$$OnPublishAsStoryMomentEventImplCopyWith<_$OnPublishAsStoryMomentEventImpl>
+      get copyWith => __$$OnPublishAsStoryMomentEventImplCopyWithImpl<
+          _$OnPublishAsStoryMomentEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1246,11 +1252,11 @@ class _$OnPublishAsStoryMomentEvent
 
 abstract class OnPublishAsStoryMomentEvent implements AddPostEvent {
   const factory OnPublishAsStoryMomentEvent(final bool isStoryMoment) =
-      _$OnPublishAsStoryMomentEvent;
+      _$OnPublishAsStoryMomentEventImpl;
 
   bool get isStoryMoment;
   @JsonKey(ignore: true)
-  _$$OnPublishAsStoryMomentEventCopyWith<_$OnPublishAsStoryMomentEvent>
+  _$$OnPublishAsStoryMomentEventImplCopyWith<_$OnPublishAsStoryMomentEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1368,11 +1374,11 @@ class _$AddPostStateCopyWithImpl<$Res, $Val extends AddPostState>
 }
 
 /// @nodoc
-abstract class _$$_AddPostStateCopyWith<$Res>
+abstract class _$$AddPostStateImplCopyWith<$Res>
     implements $AddPostStateCopyWith<$Res> {
-  factory _$$_AddPostStateCopyWith(
-          _$_AddPostState value, $Res Function(_$_AddPostState) then) =
-      __$$_AddPostStateCopyWithImpl<$Res>;
+  factory _$$AddPostStateImplCopyWith(
+          _$AddPostStateImpl value, $Res Function(_$AddPostStateImpl) then) =
+      __$$AddPostStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1390,11 +1396,11 @@ abstract class _$$_AddPostStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AddPostStateCopyWithImpl<$Res>
-    extends _$AddPostStateCopyWithImpl<$Res, _$_AddPostState>
-    implements _$$_AddPostStateCopyWith<$Res> {
-  __$$_AddPostStateCopyWithImpl(
-      _$_AddPostState _value, $Res Function(_$_AddPostState) _then)
+class __$$AddPostStateImplCopyWithImpl<$Res>
+    extends _$AddPostStateCopyWithImpl<$Res, _$AddPostStateImpl>
+    implements _$$AddPostStateImplCopyWith<$Res> {
+  __$$AddPostStateImplCopyWithImpl(
+      _$AddPostStateImpl _value, $Res Function(_$AddPostStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1412,7 +1418,7 @@ class __$$_AddPostStateCopyWithImpl<$Res>
     Object? isPostUploadedSuccessfully = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_AddPostState(
+    return _then(_$AddPostStateImpl(
       imageSource: freezed == imageSource
           ? _value.imageSource
           : imageSource // ignore: cast_nullable_to_non_nullable
@@ -1463,8 +1469,8 @@ class __$$_AddPostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AddPostState extends _AddPostState with DiagnosticableTreeMixin {
-  const _$_AddPostState(
+class _$AddPostStateImpl extends _AddPostState with DiagnosticableTreeMixin {
+  const _$AddPostStateImpl(
       {this.imageSource,
       this.postType,
       this.imageData,
@@ -1534,7 +1540,7 @@ class _$_AddPostState extends _AddPostState with DiagnosticableTreeMixin {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AddPostState &&
+            other is _$AddPostStateImpl &&
             (identical(other.imageSource, imageSource) ||
                 other.imageSource == imageSource) &&
             (identical(other.postType, postType) ||
@@ -1578,8 +1584,8 @@ class _$_AddPostState extends _AddPostState with DiagnosticableTreeMixin {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AddPostStateCopyWith<_$_AddPostState> get copyWith =>
-      __$$_AddPostStateCopyWithImpl<_$_AddPostState>(this, _$identity);
+  _$$AddPostStateImplCopyWith<_$AddPostStateImpl> get copyWith =>
+      __$$AddPostStateImplCopyWithImpl<_$AddPostStateImpl>(this, _$identity);
 }
 
 abstract class _AddPostState extends AddPostState {
@@ -1594,7 +1600,7 @@ abstract class _AddPostState extends AddPostState {
       final bool isPostUploading,
       final bool isLoading,
       final bool isPostUploadedSuccessfully,
-      final String? errorMessage}) = _$_AddPostState;
+      final String? errorMessage}) = _$AddPostStateImpl;
   const _AddPostState._() : super._();
 
   @override
@@ -1621,6 +1627,6 @@ abstract class _AddPostState extends AddPostState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_AddPostStateCopyWith<_$_AddPostState> get copyWith =>
+  _$$AddPostStateImplCopyWith<_$AddPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

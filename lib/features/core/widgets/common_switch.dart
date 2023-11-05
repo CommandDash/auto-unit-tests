@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pic_connect/utils/colors.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
 class CommonSwitch extends StatefulWidget {
   final bool initialValue;
   final ValueChanged<bool>? onChanged;
@@ -26,6 +28,7 @@ class CommonSwitchState extends State<CommonSwitch> {
   void initState() {
     super.initState();
     _value = widget.initialValue;
+    print('Init state');
   }
 
   @override

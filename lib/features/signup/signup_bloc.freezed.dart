@@ -81,21 +81,21 @@ class _$SignUpEventCopyWithImpl<$Res, $Val extends SignUpEvent>
 }
 
 /// @nodoc
-abstract class _$$OnDoSignUpEventCopyWith<$Res> {
-  factory _$$OnDoSignUpEventCopyWith(
-          _$OnDoSignUpEvent value, $Res Function(_$OnDoSignUpEvent) then) =
-      __$$OnDoSignUpEventCopyWithImpl<$Res>;
+abstract class _$$OnDoSignUpEventImplCopyWith<$Res> {
+  factory _$$OnDoSignUpEventImplCopyWith(_$OnDoSignUpEventImpl value,
+          $Res Function(_$OnDoSignUpEventImpl) then) =
+      __$$OnDoSignUpEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String email, String password, String username, String repeatPassword});
 }
 
 /// @nodoc
-class __$$OnDoSignUpEventCopyWithImpl<$Res>
-    extends _$SignUpEventCopyWithImpl<$Res, _$OnDoSignUpEvent>
-    implements _$$OnDoSignUpEventCopyWith<$Res> {
-  __$$OnDoSignUpEventCopyWithImpl(
-      _$OnDoSignUpEvent _value, $Res Function(_$OnDoSignUpEvent) _then)
+class __$$OnDoSignUpEventImplCopyWithImpl<$Res>
+    extends _$SignUpEventCopyWithImpl<$Res, _$OnDoSignUpEventImpl>
+    implements _$$OnDoSignUpEventImplCopyWith<$Res> {
+  __$$OnDoSignUpEventImplCopyWithImpl(
+      _$OnDoSignUpEventImpl _value, $Res Function(_$OnDoSignUpEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -106,7 +106,7 @@ class __$$OnDoSignUpEventCopyWithImpl<$Res>
     Object? username = null,
     Object? repeatPassword = null,
   }) {
-    return _then(_$OnDoSignUpEvent(
+    return _then(_$OnDoSignUpEventImpl(
       null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -129,10 +129,10 @@ class __$$OnDoSignUpEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnDoSignUpEvent
+class _$OnDoSignUpEventImpl
     with DiagnosticableTreeMixin
     implements OnDoSignUpEvent {
-  const _$OnDoSignUpEvent(
+  const _$OnDoSignUpEventImpl(
       this.email, this.password, this.username, this.repeatPassword);
 
   @override
@@ -164,7 +164,7 @@ class _$OnDoSignUpEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnDoSignUpEvent &&
+            other is _$OnDoSignUpEventImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password) &&
@@ -181,8 +181,9 @@ class _$OnDoSignUpEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnDoSignUpEventCopyWith<_$OnDoSignUpEvent> get copyWith =>
-      __$$OnDoSignUpEventCopyWithImpl<_$OnDoSignUpEvent>(this, _$identity);
+  _$$OnDoSignUpEventImplCopyWith<_$OnDoSignUpEventImpl> get copyWith =>
+      __$$OnDoSignUpEventImplCopyWithImpl<_$OnDoSignUpEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -254,33 +255,36 @@ class _$OnDoSignUpEvent
 }
 
 abstract class OnDoSignUpEvent implements SignUpEvent {
-  const factory OnDoSignUpEvent(final String email, final String password,
-      final String username, final String repeatPassword) = _$OnDoSignUpEvent;
+  const factory OnDoSignUpEvent(
+      final String email,
+      final String password,
+      final String username,
+      final String repeatPassword) = _$OnDoSignUpEventImpl;
 
   String get email;
   String get password;
   String get username;
   String get repeatPassword;
   @JsonKey(ignore: true)
-  _$$OnDoSignUpEventCopyWith<_$OnDoSignUpEvent> get copyWith =>
+  _$$OnDoSignUpEventImplCopyWith<_$OnDoSignUpEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnPickUpImageEventCopyWith<$Res> {
-  factory _$$OnPickUpImageEventCopyWith(_$OnPickUpImageEvent value,
-          $Res Function(_$OnPickUpImageEvent) then) =
-      __$$OnPickUpImageEventCopyWithImpl<$Res>;
+abstract class _$$OnPickUpImageEventImplCopyWith<$Res> {
+  factory _$$OnPickUpImageEventImplCopyWith(_$OnPickUpImageEventImpl value,
+          $Res Function(_$OnPickUpImageEventImpl) then) =
+      __$$OnPickUpImageEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ImageSource imageSource});
 }
 
 /// @nodoc
-class __$$OnPickUpImageEventCopyWithImpl<$Res>
-    extends _$SignUpEventCopyWithImpl<$Res, _$OnPickUpImageEvent>
-    implements _$$OnPickUpImageEventCopyWith<$Res> {
-  __$$OnPickUpImageEventCopyWithImpl(
-      _$OnPickUpImageEvent _value, $Res Function(_$OnPickUpImageEvent) _then)
+class __$$OnPickUpImageEventImplCopyWithImpl<$Res>
+    extends _$SignUpEventCopyWithImpl<$Res, _$OnPickUpImageEventImpl>
+    implements _$$OnPickUpImageEventImplCopyWith<$Res> {
+  __$$OnPickUpImageEventImplCopyWithImpl(_$OnPickUpImageEventImpl _value,
+      $Res Function(_$OnPickUpImageEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -288,7 +292,7 @@ class __$$OnPickUpImageEventCopyWithImpl<$Res>
   $Res call({
     Object? imageSource = null,
   }) {
-    return _then(_$OnPickUpImageEvent(
+    return _then(_$OnPickUpImageEventImpl(
       null == imageSource
           ? _value.imageSource
           : imageSource // ignore: cast_nullable_to_non_nullable
@@ -299,10 +303,10 @@ class __$$OnPickUpImageEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnPickUpImageEvent
+class _$OnPickUpImageEventImpl
     with DiagnosticableTreeMixin
     implements OnPickUpImageEvent {
-  const _$OnPickUpImageEvent(this.imageSource);
+  const _$OnPickUpImageEventImpl(this.imageSource);
 
   @override
   final ImageSource imageSource;
@@ -324,7 +328,7 @@ class _$OnPickUpImageEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnPickUpImageEvent &&
+            other is _$OnPickUpImageEventImpl &&
             (identical(other.imageSource, imageSource) ||
                 other.imageSource == imageSource));
   }
@@ -335,8 +339,8 @@ class _$OnPickUpImageEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnPickUpImageEventCopyWith<_$OnPickUpImageEvent> get copyWith =>
-      __$$OnPickUpImageEventCopyWithImpl<_$OnPickUpImageEvent>(
+  _$$OnPickUpImageEventImplCopyWith<_$OnPickUpImageEventImpl> get copyWith =>
+      __$$OnPickUpImageEventImplCopyWithImpl<_$OnPickUpImageEventImpl>(
           this, _$identity);
 
   @override
@@ -410,11 +414,11 @@ class _$OnPickUpImageEvent
 
 abstract class OnPickUpImageEvent implements SignUpEvent {
   const factory OnPickUpImageEvent(final ImageSource imageSource) =
-      _$OnPickUpImageEvent;
+      _$OnPickUpImageEventImpl;
 
   ImageSource get imageSource;
   @JsonKey(ignore: true)
-  _$$OnPickUpImageEventCopyWith<_$OnPickUpImageEvent> get copyWith =>
+  _$$OnPickUpImageEventImplCopyWith<_$OnPickUpImageEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -511,11 +515,11 @@ class _$SignUpStateCopyWithImpl<$Res, $Val extends SignUpState>
 }
 
 /// @nodoc
-abstract class _$$_SignUpStateCopyWith<$Res>
+abstract class _$$SignUpStateImplCopyWith<$Res>
     implements $SignUpStateCopyWith<$Res> {
-  factory _$$_SignUpStateCopyWith(
-          _$_SignUpState value, $Res Function(_$_SignUpState) then) =
-      __$$_SignUpStateCopyWithImpl<$Res>;
+  factory _$$SignUpStateImplCopyWith(
+          _$SignUpStateImpl value, $Res Function(_$SignUpStateImpl) then) =
+      __$$SignUpStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -530,11 +534,11 @@ abstract class _$$_SignUpStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SignUpStateCopyWithImpl<$Res>
-    extends _$SignUpStateCopyWithImpl<$Res, _$_SignUpState>
-    implements _$$_SignUpStateCopyWith<$Res> {
-  __$$_SignUpStateCopyWithImpl(
-      _$_SignUpState _value, $Res Function(_$_SignUpState) _then)
+class __$$SignUpStateImplCopyWithImpl<$Res>
+    extends _$SignUpStateCopyWithImpl<$Res, _$SignUpStateImpl>
+    implements _$$SignUpStateImplCopyWith<$Res> {
+  __$$SignUpStateImplCopyWithImpl(
+      _$SignUpStateImpl _value, $Res Function(_$SignUpStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -549,7 +553,7 @@ class __$$_SignUpStateCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_SignUpState(
+    return _then(_$SignUpStateImpl(
       email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -588,8 +592,8 @@ class __$$_SignUpStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
-  const _$_SignUpState(
+class _$SignUpStateImpl with DiagnosticableTreeMixin implements _SignUpState {
+  const _$SignUpStateImpl(
       {this.email,
       this.password,
       this.username,
@@ -642,7 +646,7 @@ class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpState &&
+            other is _$SignUpStateImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password) &&
@@ -673,8 +677,8 @@ class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
-      __$$_SignUpStateCopyWithImpl<_$_SignUpState>(this, _$identity);
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
+      __$$SignUpStateImplCopyWithImpl<_$SignUpStateImpl>(this, _$identity);
 }
 
 abstract class _SignUpState implements SignUpState {
@@ -686,7 +690,7 @@ abstract class _SignUpState implements SignUpState {
       final Uint8List? image,
       final bool isSignUpSuccess,
       final bool isLoading,
-      final String? errorMessage}) = _$_SignUpState;
+      final String? errorMessage}) = _$SignUpStateImpl;
 
   @override
   String? get email;
@@ -706,6 +710,6 @@ abstract class _SignUpState implements SignUpState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

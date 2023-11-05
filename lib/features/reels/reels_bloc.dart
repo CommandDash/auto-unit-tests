@@ -18,11 +18,10 @@ class ReelsBloc extends Bloc<ReelsEvent, ReelsState> {
   final LikePostUseCase likePostUseCase;
   final SaveBookmarkUseCase saveBookmarkUseCase;
 
-  ReelsBloc({
-    required this.getTopReelsWithMostLikesUseCase,
-    required this.likePostUseCase,
-    required this.saveBookmarkUseCase
-  })
+  ReelsBloc(
+      {required this.getTopReelsWithMostLikesUseCase,
+      required this.likePostUseCase,
+      required this.saveBookmarkUseCase})
       : super(const ReelsState()) {
     on<OnLoadTopReelsEvent>(onLoadTopReelsCalled);
     on<OnLikePostEvent>(onLikePostEventHandler);
@@ -43,12 +42,11 @@ class ReelsBloc extends Bloc<ReelsEvent, ReelsState> {
 
   FutureOr<void> onLikePostEventHandler(
       OnLikePostEvent event, Emitter<ReelsState> emit) async {
-    final response = await likePostUseCase(LikePostParams(event.postId));
+    await likePostUseCase(LikePostParams(event.postId));
   }
 
   FutureOr<void> onSaveBookmarkEventHandler(
       OnSaveBookmarkEvent event, Emitter<ReelsState> emit) async {
-    final response =
     await saveBookmarkUseCase(SaveBookmarkParams(event.postId));
   }
 }

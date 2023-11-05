@@ -98,22 +98,24 @@ class _$PublicationsEventCopyWithImpl<$Res, $Val extends PublicationsEvent>
 }
 
 /// @nodoc
-abstract class _$$OnLoadPublicationsEventCopyWith<$Res>
+abstract class _$$OnLoadPublicationsEventImplCopyWith<$Res>
     implements $PublicationsEventCopyWith<$Res> {
-  factory _$$OnLoadPublicationsEventCopyWith(_$OnLoadPublicationsEvent value,
-          $Res Function(_$OnLoadPublicationsEvent) then) =
-      __$$OnLoadPublicationsEventCopyWithImpl<$Res>;
+  factory _$$OnLoadPublicationsEventImplCopyWith(
+          _$OnLoadPublicationsEventImpl value,
+          $Res Function(_$OnLoadPublicationsEventImpl) then) =
+      __$$OnLoadPublicationsEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userUid, PublicationsContentTypeEnum type});
 }
 
 /// @nodoc
-class __$$OnLoadPublicationsEventCopyWithImpl<$Res>
-    extends _$PublicationsEventCopyWithImpl<$Res, _$OnLoadPublicationsEvent>
-    implements _$$OnLoadPublicationsEventCopyWith<$Res> {
-  __$$OnLoadPublicationsEventCopyWithImpl(_$OnLoadPublicationsEvent _value,
-      $Res Function(_$OnLoadPublicationsEvent) _then)
+class __$$OnLoadPublicationsEventImplCopyWithImpl<$Res>
+    extends _$PublicationsEventCopyWithImpl<$Res, _$OnLoadPublicationsEventImpl>
+    implements _$$OnLoadPublicationsEventImplCopyWith<$Res> {
+  __$$OnLoadPublicationsEventImplCopyWithImpl(
+      _$OnLoadPublicationsEventImpl _value,
+      $Res Function(_$OnLoadPublicationsEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -122,7 +124,7 @@ class __$$OnLoadPublicationsEventCopyWithImpl<$Res>
     Object? userUid = null,
     Object? type = null,
   }) {
-    return _then(_$OnLoadPublicationsEvent(
+    return _then(_$OnLoadPublicationsEventImpl(
       null == userUid
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
@@ -137,8 +139,8 @@ class __$$OnLoadPublicationsEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadPublicationsEvent implements OnLoadPublicationsEvent {
-  const _$OnLoadPublicationsEvent(this.userUid, this.type);
+class _$OnLoadPublicationsEventImpl implements OnLoadPublicationsEvent {
+  const _$OnLoadPublicationsEventImpl(this.userUid, this.type);
 
   @override
   final String userUid;
@@ -154,7 +156,7 @@ class _$OnLoadPublicationsEvent implements OnLoadPublicationsEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadPublicationsEvent &&
+            other is _$OnLoadPublicationsEventImpl &&
             (identical(other.userUid, userUid) || other.userUid == userUid) &&
             (identical(other.type, type) || other.type == type));
   }
@@ -165,9 +167,9 @@ class _$OnLoadPublicationsEvent implements OnLoadPublicationsEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadPublicationsEventCopyWith<_$OnLoadPublicationsEvent> get copyWith =>
-      __$$OnLoadPublicationsEventCopyWithImpl<_$OnLoadPublicationsEvent>(
-          this, _$identity);
+  _$$OnLoadPublicationsEventImplCopyWith<_$OnLoadPublicationsEventImpl>
+      get copyWith => __$$OnLoadPublicationsEventImplCopyWithImpl<
+          _$OnLoadPublicationsEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -232,7 +234,7 @@ class _$OnLoadPublicationsEvent implements OnLoadPublicationsEvent {
 abstract class OnLoadPublicationsEvent implements PublicationsEvent {
   const factory OnLoadPublicationsEvent(
           final String userUid, final PublicationsContentTypeEnum type) =
-      _$OnLoadPublicationsEvent;
+      _$OnLoadPublicationsEventImpl;
 
   @override
   String get userUid;
@@ -240,8 +242,8 @@ abstract class OnLoadPublicationsEvent implements PublicationsEvent {
   PublicationsContentTypeEnum get type;
   @override
   @JsonKey(ignore: true)
-  _$$OnLoadPublicationsEventCopyWith<_$OnLoadPublicationsEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnLoadPublicationsEventImplCopyWith<_$OnLoadPublicationsEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -323,11 +325,11 @@ class _$PublicationsStateCopyWithImpl<$Res, $Val extends PublicationsState>
 }
 
 /// @nodoc
-abstract class _$$_PublicationsStateCopyWith<$Res>
+abstract class _$$PublicationsStateImplCopyWith<$Res>
     implements $PublicationsStateCopyWith<$Res> {
-  factory _$$_PublicationsStateCopyWith(_$_PublicationsState value,
-          $Res Function(_$_PublicationsState) then) =
-      __$$_PublicationsStateCopyWithImpl<$Res>;
+  factory _$$PublicationsStateImplCopyWith(_$PublicationsStateImpl value,
+          $Res Function(_$PublicationsStateImpl) then) =
+      __$$PublicationsStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -340,11 +342,11 @@ abstract class _$$_PublicationsStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PublicationsStateCopyWithImpl<$Res>
-    extends _$PublicationsStateCopyWithImpl<$Res, _$_PublicationsState>
-    implements _$$_PublicationsStateCopyWith<$Res> {
-  __$$_PublicationsStateCopyWithImpl(
-      _$_PublicationsState _value, $Res Function(_$_PublicationsState) _then)
+class __$$PublicationsStateImplCopyWithImpl<$Res>
+    extends _$PublicationsStateCopyWithImpl<$Res, _$PublicationsStateImpl>
+    implements _$$PublicationsStateImplCopyWith<$Res> {
+  __$$PublicationsStateImplCopyWithImpl(_$PublicationsStateImpl _value,
+      $Res Function(_$PublicationsStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -357,7 +359,7 @@ class __$$_PublicationsStateCopyWithImpl<$Res>
     Object? type = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_PublicationsState(
+    return _then(_$PublicationsStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -388,8 +390,8 @@ class __$$_PublicationsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PublicationsState implements _PublicationsState {
-  const _$_PublicationsState(
+class _$PublicationsStateImpl implements _PublicationsState {
+  const _$PublicationsStateImpl(
       {this.isLoading = true,
       final List<PostBO> postList = const [],
       this.postLen = 0,
@@ -431,7 +433,7 @@ class _$_PublicationsState implements _PublicationsState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PublicationsState &&
+            other is _$PublicationsStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other._postList, _postList) &&
@@ -456,8 +458,8 @@ class _$_PublicationsState implements _PublicationsState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PublicationsStateCopyWith<_$_PublicationsState> get copyWith =>
-      __$$_PublicationsStateCopyWithImpl<_$_PublicationsState>(
+  _$$PublicationsStateImplCopyWith<_$PublicationsStateImpl> get copyWith =>
+      __$$PublicationsStateImplCopyWithImpl<_$PublicationsStateImpl>(
           this, _$identity);
 }
 
@@ -468,7 +470,7 @@ abstract class _PublicationsState implements PublicationsState {
       final int postLen,
       final String authorUserUid,
       final PublicationsContentTypeEnum type,
-      final String? errorMessage}) = _$_PublicationsState;
+      final String? errorMessage}) = _$PublicationsStateImpl;
 
   @override
   bool get isLoading;
@@ -484,6 +486,6 @@ abstract class _PublicationsState implements PublicationsState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_PublicationsStateCopyWith<_$_PublicationsState> get copyWith =>
+  _$$PublicationsStateImplCopyWith<_$PublicationsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

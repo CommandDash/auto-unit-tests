@@ -87,20 +87,20 @@ class _$PostCardEventCopyWithImpl<$Res, $Val extends PostCardEvent>
 }
 
 /// @nodoc
-abstract class _$$OnShowPostEventCopyWith<$Res> {
-  factory _$$OnShowPostEventCopyWith(
-          _$OnShowPostEvent value, $Res Function(_$OnShowPostEvent) then) =
-      __$$OnShowPostEventCopyWithImpl<$Res>;
+abstract class _$$OnShowPostEventImplCopyWith<$Res> {
+  factory _$$OnShowPostEventImplCopyWith(_$OnShowPostEventImpl value,
+          $Res Function(_$OnShowPostEventImpl) then) =
+      __$$OnShowPostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({PostBO post, String authUserUid});
 }
 
 /// @nodoc
-class __$$OnShowPostEventCopyWithImpl<$Res>
-    extends _$PostCardEventCopyWithImpl<$Res, _$OnShowPostEvent>
-    implements _$$OnShowPostEventCopyWith<$Res> {
-  __$$OnShowPostEventCopyWithImpl(
-      _$OnShowPostEvent _value, $Res Function(_$OnShowPostEvent) _then)
+class __$$OnShowPostEventImplCopyWithImpl<$Res>
+    extends _$PostCardEventCopyWithImpl<$Res, _$OnShowPostEventImpl>
+    implements _$$OnShowPostEventImplCopyWith<$Res> {
+  __$$OnShowPostEventImplCopyWithImpl(
+      _$OnShowPostEventImpl _value, $Res Function(_$OnShowPostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -109,7 +109,7 @@ class __$$OnShowPostEventCopyWithImpl<$Res>
     Object? post = null,
     Object? authUserUid = null,
   }) {
-    return _then(_$OnShowPostEvent(
+    return _then(_$OnShowPostEventImpl(
       null == post
           ? _value.post
           : post // ignore: cast_nullable_to_non_nullable
@@ -124,8 +124,8 @@ class __$$OnShowPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnShowPostEvent implements OnShowPostEvent {
-  const _$OnShowPostEvent(this.post, this.authUserUid);
+class _$OnShowPostEventImpl implements OnShowPostEvent {
+  const _$OnShowPostEventImpl(this.post, this.authUserUid);
 
   @override
   final PostBO post;
@@ -141,7 +141,7 @@ class _$OnShowPostEvent implements OnShowPostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnShowPostEvent &&
+            other is _$OnShowPostEventImpl &&
             (identical(other.post, post) || other.post == post) &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid));
@@ -153,8 +153,9 @@ class _$OnShowPostEvent implements OnShowPostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnShowPostEventCopyWith<_$OnShowPostEvent> get copyWith =>
-      __$$OnShowPostEventCopyWithImpl<_$OnShowPostEvent>(this, _$identity);
+  _$$OnShowPostEventImplCopyWith<_$OnShowPostEventImpl> get copyWith =>
+      __$$OnShowPostEventImplCopyWithImpl<_$OnShowPostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -233,30 +234,30 @@ class _$OnShowPostEvent implements OnShowPostEvent {
 
 abstract class OnShowPostEvent implements PostCardEvent {
   const factory OnShowPostEvent(final PostBO post, final String authUserUid) =
-      _$OnShowPostEvent;
+      _$OnShowPostEventImpl;
 
   PostBO get post;
   String get authUserUid;
   @JsonKey(ignore: true)
-  _$$OnShowPostEventCopyWith<_$OnShowPostEvent> get copyWith =>
+  _$$OnShowPostEventImplCopyWith<_$OnShowPostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnDeletePostEventCopyWith<$Res> {
-  factory _$$OnDeletePostEventCopyWith(
-          _$OnDeletePostEvent value, $Res Function(_$OnDeletePostEvent) then) =
-      __$$OnDeletePostEventCopyWithImpl<$Res>;
+abstract class _$$OnDeletePostEventImplCopyWith<$Res> {
+  factory _$$OnDeletePostEventImplCopyWith(_$OnDeletePostEventImpl value,
+          $Res Function(_$OnDeletePostEventImpl) then) =
+      __$$OnDeletePostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnDeletePostEventCopyWithImpl<$Res>
-    extends _$PostCardEventCopyWithImpl<$Res, _$OnDeletePostEvent>
-    implements _$$OnDeletePostEventCopyWith<$Res> {
-  __$$OnDeletePostEventCopyWithImpl(
-      _$OnDeletePostEvent _value, $Res Function(_$OnDeletePostEvent) _then)
+class __$$OnDeletePostEventImplCopyWithImpl<$Res>
+    extends _$PostCardEventCopyWithImpl<$Res, _$OnDeletePostEventImpl>
+    implements _$$OnDeletePostEventImplCopyWith<$Res> {
+  __$$OnDeletePostEventImplCopyWithImpl(_$OnDeletePostEventImpl _value,
+      $Res Function(_$OnDeletePostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -264,7 +265,7 @@ class __$$OnDeletePostEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnDeletePostEvent(
+    return _then(_$OnDeletePostEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -275,8 +276,8 @@ class __$$OnDeletePostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnDeletePostEvent implements OnDeletePostEvent {
-  const _$OnDeletePostEvent(this.postId);
+class _$OnDeletePostEventImpl implements OnDeletePostEvent {
+  const _$OnDeletePostEventImpl(this.postId);
 
   @override
   final String postId;
@@ -290,7 +291,7 @@ class _$OnDeletePostEvent implements OnDeletePostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnDeletePostEvent &&
+            other is _$OnDeletePostEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -300,8 +301,9 @@ class _$OnDeletePostEvent implements OnDeletePostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnDeletePostEventCopyWith<_$OnDeletePostEvent> get copyWith =>
-      __$$OnDeletePostEventCopyWithImpl<_$OnDeletePostEvent>(this, _$identity);
+  _$$OnDeletePostEventImplCopyWith<_$OnDeletePostEventImpl> get copyWith =>
+      __$$OnDeletePostEventImplCopyWithImpl<_$OnDeletePostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -379,29 +381,30 @@ class _$OnDeletePostEvent implements OnDeletePostEvent {
 }
 
 abstract class OnDeletePostEvent implements PostCardEvent {
-  const factory OnDeletePostEvent(final String postId) = _$OnDeletePostEvent;
+  const factory OnDeletePostEvent(final String postId) =
+      _$OnDeletePostEventImpl;
 
   String get postId;
   @JsonKey(ignore: true)
-  _$$OnDeletePostEventCopyWith<_$OnDeletePostEvent> get copyWith =>
+  _$$OnDeletePostEventImplCopyWith<_$OnDeletePostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnLikePostEventCopyWith<$Res> {
-  factory _$$OnLikePostEventCopyWith(
-          _$OnLikePostEvent value, $Res Function(_$OnLikePostEvent) then) =
-      __$$OnLikePostEventCopyWithImpl<$Res>;
+abstract class _$$OnLikePostEventImplCopyWith<$Res> {
+  factory _$$OnLikePostEventImplCopyWith(_$OnLikePostEventImpl value,
+          $Res Function(_$OnLikePostEventImpl) then) =
+      __$$OnLikePostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnLikePostEventCopyWithImpl<$Res>
-    extends _$PostCardEventCopyWithImpl<$Res, _$OnLikePostEvent>
-    implements _$$OnLikePostEventCopyWith<$Res> {
-  __$$OnLikePostEventCopyWithImpl(
-      _$OnLikePostEvent _value, $Res Function(_$OnLikePostEvent) _then)
+class __$$OnLikePostEventImplCopyWithImpl<$Res>
+    extends _$PostCardEventCopyWithImpl<$Res, _$OnLikePostEventImpl>
+    implements _$$OnLikePostEventImplCopyWith<$Res> {
+  __$$OnLikePostEventImplCopyWithImpl(
+      _$OnLikePostEventImpl _value, $Res Function(_$OnLikePostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -409,7 +412,7 @@ class __$$OnLikePostEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnLikePostEvent(
+    return _then(_$OnLikePostEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -420,8 +423,8 @@ class __$$OnLikePostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLikePostEvent implements OnLikePostEvent {
-  const _$OnLikePostEvent(this.postId);
+class _$OnLikePostEventImpl implements OnLikePostEvent {
+  const _$OnLikePostEventImpl(this.postId);
 
   @override
   final String postId;
@@ -435,7 +438,7 @@ class _$OnLikePostEvent implements OnLikePostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLikePostEvent &&
+            other is _$OnLikePostEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -445,8 +448,9 @@ class _$OnLikePostEvent implements OnLikePostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLikePostEventCopyWith<_$OnLikePostEvent> get copyWith =>
-      __$$OnLikePostEventCopyWithImpl<_$OnLikePostEvent>(this, _$identity);
+  _$$OnLikePostEventImplCopyWith<_$OnLikePostEventImpl> get copyWith =>
+      __$$OnLikePostEventImplCopyWithImpl<_$OnLikePostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -524,29 +528,29 @@ class _$OnLikePostEvent implements OnLikePostEvent {
 }
 
 abstract class OnLikePostEvent implements PostCardEvent {
-  const factory OnLikePostEvent(final String postId) = _$OnLikePostEvent;
+  const factory OnLikePostEvent(final String postId) = _$OnLikePostEventImpl;
 
   String get postId;
   @JsonKey(ignore: true)
-  _$$OnLikePostEventCopyWith<_$OnLikePostEvent> get copyWith =>
+  _$$OnLikePostEventImplCopyWith<_$OnLikePostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnSaveBookmarkEventCopyWith<$Res> {
-  factory _$$OnSaveBookmarkEventCopyWith(_$OnSaveBookmarkEvent value,
-          $Res Function(_$OnSaveBookmarkEvent) then) =
-      __$$OnSaveBookmarkEventCopyWithImpl<$Res>;
+abstract class _$$OnSaveBookmarkEventImplCopyWith<$Res> {
+  factory _$$OnSaveBookmarkEventImplCopyWith(_$OnSaveBookmarkEventImpl value,
+          $Res Function(_$OnSaveBookmarkEventImpl) then) =
+      __$$OnSaveBookmarkEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
-    extends _$PostCardEventCopyWithImpl<$Res, _$OnSaveBookmarkEvent>
-    implements _$$OnSaveBookmarkEventCopyWith<$Res> {
-  __$$OnSaveBookmarkEventCopyWithImpl(
-      _$OnSaveBookmarkEvent _value, $Res Function(_$OnSaveBookmarkEvent) _then)
+class __$$OnSaveBookmarkEventImplCopyWithImpl<$Res>
+    extends _$PostCardEventCopyWithImpl<$Res, _$OnSaveBookmarkEventImpl>
+    implements _$$OnSaveBookmarkEventImplCopyWith<$Res> {
+  __$$OnSaveBookmarkEventImplCopyWithImpl(_$OnSaveBookmarkEventImpl _value,
+      $Res Function(_$OnSaveBookmarkEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -554,7 +558,7 @@ class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnSaveBookmarkEvent(
+    return _then(_$OnSaveBookmarkEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -565,8 +569,8 @@ class __$$OnSaveBookmarkEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
-  const _$OnSaveBookmarkEvent(this.postId);
+class _$OnSaveBookmarkEventImpl implements OnSaveBookmarkEvent {
+  const _$OnSaveBookmarkEventImpl(this.postId);
 
   @override
   final String postId;
@@ -580,7 +584,7 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnSaveBookmarkEvent &&
+            other is _$OnSaveBookmarkEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -590,8 +594,8 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnSaveBookmarkEventCopyWith<_$OnSaveBookmarkEvent> get copyWith =>
-      __$$OnSaveBookmarkEventCopyWithImpl<_$OnSaveBookmarkEvent>(
+  _$$OnSaveBookmarkEventImplCopyWith<_$OnSaveBookmarkEventImpl> get copyWith =>
+      __$$OnSaveBookmarkEventImplCopyWithImpl<_$OnSaveBookmarkEventImpl>(
           this, _$identity);
 
   @override
@@ -671,11 +675,11 @@ class _$OnSaveBookmarkEvent implements OnSaveBookmarkEvent {
 
 abstract class OnSaveBookmarkEvent implements PostCardEvent {
   const factory OnSaveBookmarkEvent(final String postId) =
-      _$OnSaveBookmarkEvent;
+      _$OnSaveBookmarkEventImpl;
 
   String get postId;
   @JsonKey(ignore: true)
-  _$$OnSaveBookmarkEventCopyWith<_$OnSaveBookmarkEvent> get copyWith =>
+  _$$OnSaveBookmarkEventImplCopyWith<_$OnSaveBookmarkEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -828,11 +832,11 @@ class _$PostCardStateCopyWithImpl<$Res, $Val extends PostCardState>
 }
 
 /// @nodoc
-abstract class _$$_PostCardStateCopyWith<$Res>
+abstract class _$$PostCardStateImplCopyWith<$Res>
     implements $PostCardStateCopyWith<$Res> {
-  factory _$$_PostCardStateCopyWith(
-          _$_PostCardState value, $Res Function(_$_PostCardState) then) =
-      __$$_PostCardStateCopyWithImpl<$Res>;
+  factory _$$PostCardStateImplCopyWith(
+          _$PostCardStateImpl value, $Res Function(_$PostCardStateImpl) then) =
+      __$$PostCardStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -855,11 +859,11 @@ abstract class _$$_PostCardStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PostCardStateCopyWithImpl<$Res>
-    extends _$PostCardStateCopyWithImpl<$Res, _$_PostCardState>
-    implements _$$_PostCardStateCopyWith<$Res> {
-  __$$_PostCardStateCopyWithImpl(
-      _$_PostCardState _value, $Res Function(_$_PostCardState) _then)
+class __$$PostCardStateImplCopyWithImpl<$Res>
+    extends _$PostCardStateCopyWithImpl<$Res, _$PostCardStateImpl>
+    implements _$$PostCardStateImplCopyWith<$Res> {
+  __$$PostCardStateImplCopyWithImpl(
+      _$PostCardStateImpl _value, $Res Function(_$PostCardStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -882,7 +886,7 @@ class __$$_PostCardStateCopyWithImpl<$Res>
     Object? tags = null,
     Object? authorImageUrl = null,
   }) {
-    return _then(_$_PostCardState(
+    return _then(_$PostCardStateImpl(
       isPostOwner: null == isPostOwner
           ? _value.isPostOwner
           : isPostOwner // ignore: cast_nullable_to_non_nullable
@@ -953,8 +957,8 @@ class __$$_PostCardStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PostCardState implements _PostCardState {
-  const _$_PostCardState(
+class _$PostCardStateImpl implements _PostCardState {
+  const _$PostCardStateImpl(
       {this.isPostOwner = false,
       this.isLikedByAuthUser = false,
       this.isBookmarkedByAuthUser = false,
@@ -1037,7 +1041,7 @@ class _$_PostCardState implements _PostCardState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PostCardState &&
+            other is _$PostCardStateImpl &&
             (identical(other.isPostOwner, isPostOwner) ||
                 other.isPostOwner == isPostOwner) &&
             (identical(other.isLikedByAuthUser, isLikedByAuthUser) ||
@@ -1091,8 +1095,8 @@ class _$_PostCardState implements _PostCardState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PostCardStateCopyWith<_$_PostCardState> get copyWith =>
-      __$$_PostCardStateCopyWithImpl<_$_PostCardState>(this, _$identity);
+  _$$PostCardStateImplCopyWith<_$PostCardStateImpl> get copyWith =>
+      __$$PostCardStateImplCopyWithImpl<_$PostCardStateImpl>(this, _$identity);
 }
 
 abstract class _PostCardState implements PostCardState {
@@ -1112,7 +1116,7 @@ abstract class _PostCardState implements PostCardState {
       final String placeInfo,
       final bool isPostDeleted,
       final List<String> tags,
-      final String authorImageUrl}) = _$_PostCardState;
+      final String authorImageUrl}) = _$PostCardStateImpl;
 
   @override
   bool get isPostOwner;
@@ -1148,6 +1152,6 @@ abstract class _PostCardState implements PostCardState {
   String get authorImageUrl;
   @override
   @JsonKey(ignore: true)
-  _$$_PostCardStateCopyWith<_$_PostCardState> get copyWith =>
+  _$$PostCardStateImplCopyWith<_$PostCardStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

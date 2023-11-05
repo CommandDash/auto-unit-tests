@@ -72,7 +72,8 @@ class FollowersBloc extends Bloc<FollowersEvent, FollowersState> {
     emit(state.copyWith(allowUserInput: false));
     final response = await followUserUseCase(FollowUserParams(event.userUid));
     response.fold(
-        (failure) => emit(state.copyWith(errorMessage: failure.message, allowUserInput: true)),
+        (failure) => emit(state.copyWith(
+            errorMessage: failure.message, allowUserInput: true)),
         (isUnFollowed) => emit(state.copyWith(
             errorMessage: null,
             allowUserInput: true,
@@ -86,8 +87,8 @@ class FollowersBloc extends Bloc<FollowersEvent, FollowersState> {
       String userUid, String authUserUid, Emitter<FollowersState> emit) async {
     emit(state.copyWith(
         isLoading: true, userUid: userUid, authUserUid: authUserUid));
-    final response = await findFollowersByUserUseCase(
-        FindFollowersByUserParams(userUid));
+    final response =
+        await findFollowersByUserUseCase(FindFollowersByUserParams(userUid));
     response.fold(
         (failure) => emit(
             state.copyWith(isLoading: false, errorMessage: failure.message)),

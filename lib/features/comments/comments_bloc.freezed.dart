@@ -104,23 +104,24 @@ class _$CommentsEventCopyWithImpl<$Res, $Val extends CommentsEvent>
 }
 
 /// @nodoc
-abstract class _$$OnLoadCommentsByPostEventCopyWith<$Res>
+abstract class _$$OnLoadCommentsByPostEventImplCopyWith<$Res>
     implements $CommentsEventCopyWith<$Res> {
-  factory _$$OnLoadCommentsByPostEventCopyWith(
-          _$OnLoadCommentsByPostEvent value,
-          $Res Function(_$OnLoadCommentsByPostEvent) then) =
-      __$$OnLoadCommentsByPostEventCopyWithImpl<$Res>;
+  factory _$$OnLoadCommentsByPostEventImplCopyWith(
+          _$OnLoadCommentsByPostEventImpl value,
+          $Res Function(_$OnLoadCommentsByPostEventImpl) then) =
+      __$$OnLoadCommentsByPostEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String postId, String authUserUid});
 }
 
 /// @nodoc
-class __$$OnLoadCommentsByPostEventCopyWithImpl<$Res>
-    extends _$CommentsEventCopyWithImpl<$Res, _$OnLoadCommentsByPostEvent>
-    implements _$$OnLoadCommentsByPostEventCopyWith<$Res> {
-  __$$OnLoadCommentsByPostEventCopyWithImpl(_$OnLoadCommentsByPostEvent _value,
-      $Res Function(_$OnLoadCommentsByPostEvent) _then)
+class __$$OnLoadCommentsByPostEventImplCopyWithImpl<$Res>
+    extends _$CommentsEventCopyWithImpl<$Res, _$OnLoadCommentsByPostEventImpl>
+    implements _$$OnLoadCommentsByPostEventImplCopyWith<$Res> {
+  __$$OnLoadCommentsByPostEventImplCopyWithImpl(
+      _$OnLoadCommentsByPostEventImpl _value,
+      $Res Function(_$OnLoadCommentsByPostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -129,7 +130,7 @@ class __$$OnLoadCommentsByPostEventCopyWithImpl<$Res>
     Object? postId = null,
     Object? authUserUid = null,
   }) {
-    return _then(_$OnLoadCommentsByPostEvent(
+    return _then(_$OnLoadCommentsByPostEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -144,8 +145,8 @@ class __$$OnLoadCommentsByPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadCommentsByPostEvent implements OnLoadCommentsByPostEvent {
-  const _$OnLoadCommentsByPostEvent(this.postId, this.authUserUid);
+class _$OnLoadCommentsByPostEventImpl implements OnLoadCommentsByPostEvent {
+  const _$OnLoadCommentsByPostEventImpl(this.postId, this.authUserUid);
 
   @override
   final String postId;
@@ -161,7 +162,7 @@ class _$OnLoadCommentsByPostEvent implements OnLoadCommentsByPostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadCommentsByPostEvent &&
+            other is _$OnLoadCommentsByPostEventImpl &&
             (identical(other.postId, postId) || other.postId == postId) &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid));
@@ -173,9 +174,9 @@ class _$OnLoadCommentsByPostEvent implements OnLoadCommentsByPostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadCommentsByPostEventCopyWith<_$OnLoadCommentsByPostEvent>
-      get copyWith => __$$OnLoadCommentsByPostEventCopyWithImpl<
-          _$OnLoadCommentsByPostEvent>(this, _$identity);
+  _$$OnLoadCommentsByPostEventImplCopyWith<_$OnLoadCommentsByPostEventImpl>
+      get copyWith => __$$OnLoadCommentsByPostEventImplCopyWithImpl<
+          _$OnLoadCommentsByPostEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -252,34 +253,35 @@ class _$OnLoadCommentsByPostEvent implements OnLoadCommentsByPostEvent {
 abstract class OnLoadCommentsByPostEvent implements CommentsEvent {
   const factory OnLoadCommentsByPostEvent(
           final String postId, final String authUserUid) =
-      _$OnLoadCommentsByPostEvent;
+      _$OnLoadCommentsByPostEventImpl;
 
   @override
   String get postId;
   String get authUserUid;
   @override
   @JsonKey(ignore: true)
-  _$$OnLoadCommentsByPostEventCopyWith<_$OnLoadCommentsByPostEvent>
+  _$$OnLoadCommentsByPostEventImplCopyWith<_$OnLoadCommentsByPostEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnPublishCommentEventCopyWith<$Res>
+abstract class _$$OnPublishCommentEventImplCopyWith<$Res>
     implements $CommentsEventCopyWith<$Res> {
-  factory _$$OnPublishCommentEventCopyWith(_$OnPublishCommentEvent value,
-          $Res Function(_$OnPublishCommentEvent) then) =
-      __$$OnPublishCommentEventCopyWithImpl<$Res>;
+  factory _$$OnPublishCommentEventImplCopyWith(
+          _$OnPublishCommentEventImpl value,
+          $Res Function(_$OnPublishCommentEventImpl) then) =
+      __$$OnPublishCommentEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String postId, String text});
 }
 
 /// @nodoc
-class __$$OnPublishCommentEventCopyWithImpl<$Res>
-    extends _$CommentsEventCopyWithImpl<$Res, _$OnPublishCommentEvent>
-    implements _$$OnPublishCommentEventCopyWith<$Res> {
-  __$$OnPublishCommentEventCopyWithImpl(_$OnPublishCommentEvent _value,
-      $Res Function(_$OnPublishCommentEvent) _then)
+class __$$OnPublishCommentEventImplCopyWithImpl<$Res>
+    extends _$CommentsEventCopyWithImpl<$Res, _$OnPublishCommentEventImpl>
+    implements _$$OnPublishCommentEventImplCopyWith<$Res> {
+  __$$OnPublishCommentEventImplCopyWithImpl(_$OnPublishCommentEventImpl _value,
+      $Res Function(_$OnPublishCommentEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -288,7 +290,7 @@ class __$$OnPublishCommentEventCopyWithImpl<$Res>
     Object? postId = null,
     Object? text = null,
   }) {
-    return _then(_$OnPublishCommentEvent(
+    return _then(_$OnPublishCommentEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -303,8 +305,8 @@ class __$$OnPublishCommentEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnPublishCommentEvent implements OnPublishCommentEvent {
-  const _$OnPublishCommentEvent(this.postId, this.text);
+class _$OnPublishCommentEventImpl implements OnPublishCommentEvent {
+  const _$OnPublishCommentEventImpl(this.postId, this.text);
 
   @override
   final String postId;
@@ -320,7 +322,7 @@ class _$OnPublishCommentEvent implements OnPublishCommentEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnPublishCommentEvent &&
+            other is _$OnPublishCommentEventImpl &&
             (identical(other.postId, postId) || other.postId == postId) &&
             (identical(other.text, text) || other.text == text));
   }
@@ -331,9 +333,9 @@ class _$OnPublishCommentEvent implements OnPublishCommentEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnPublishCommentEventCopyWith<_$OnPublishCommentEvent> get copyWith =>
-      __$$OnPublishCommentEventCopyWithImpl<_$OnPublishCommentEvent>(
-          this, _$identity);
+  _$$OnPublishCommentEventImplCopyWith<_$OnPublishCommentEventImpl>
+      get copyWith => __$$OnPublishCommentEventImplCopyWithImpl<
+          _$OnPublishCommentEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -409,34 +411,36 @@ class _$OnPublishCommentEvent implements OnPublishCommentEvent {
 
 abstract class OnPublishCommentEvent implements CommentsEvent {
   const factory OnPublishCommentEvent(final String postId, final String text) =
-      _$OnPublishCommentEvent;
+      _$OnPublishCommentEventImpl;
 
   @override
   String get postId;
   String get text;
   @override
   @JsonKey(ignore: true)
-  _$$OnPublishCommentEventCopyWith<_$OnPublishCommentEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnPublishCommentEventImplCopyWith<_$OnPublishCommentEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnRefreshCommentsEventCopyWith<$Res>
+abstract class _$$OnRefreshCommentsEventImplCopyWith<$Res>
     implements $CommentsEventCopyWith<$Res> {
-  factory _$$OnRefreshCommentsEventCopyWith(_$OnRefreshCommentsEvent value,
-          $Res Function(_$OnRefreshCommentsEvent) then) =
-      __$$OnRefreshCommentsEventCopyWithImpl<$Res>;
+  factory _$$OnRefreshCommentsEventImplCopyWith(
+          _$OnRefreshCommentsEventImpl value,
+          $Res Function(_$OnRefreshCommentsEventImpl) then) =
+      __$$OnRefreshCommentsEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String postId});
 }
 
 /// @nodoc
-class __$$OnRefreshCommentsEventCopyWithImpl<$Res>
-    extends _$CommentsEventCopyWithImpl<$Res, _$OnRefreshCommentsEvent>
-    implements _$$OnRefreshCommentsEventCopyWith<$Res> {
-  __$$OnRefreshCommentsEventCopyWithImpl(_$OnRefreshCommentsEvent _value,
-      $Res Function(_$OnRefreshCommentsEvent) _then)
+class __$$OnRefreshCommentsEventImplCopyWithImpl<$Res>
+    extends _$CommentsEventCopyWithImpl<$Res, _$OnRefreshCommentsEventImpl>
+    implements _$$OnRefreshCommentsEventImplCopyWith<$Res> {
+  __$$OnRefreshCommentsEventImplCopyWithImpl(
+      _$OnRefreshCommentsEventImpl _value,
+      $Res Function(_$OnRefreshCommentsEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -444,7 +448,7 @@ class __$$OnRefreshCommentsEventCopyWithImpl<$Res>
   $Res call({
     Object? postId = null,
   }) {
-    return _then(_$OnRefreshCommentsEvent(
+    return _then(_$OnRefreshCommentsEventImpl(
       null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -455,8 +459,8 @@ class __$$OnRefreshCommentsEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnRefreshCommentsEvent implements OnRefreshCommentsEvent {
-  const _$OnRefreshCommentsEvent(this.postId);
+class _$OnRefreshCommentsEventImpl implements OnRefreshCommentsEvent {
+  const _$OnRefreshCommentsEventImpl(this.postId);
 
   @override
   final String postId;
@@ -470,7 +474,7 @@ class _$OnRefreshCommentsEvent implements OnRefreshCommentsEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnRefreshCommentsEvent &&
+            other is _$OnRefreshCommentsEventImpl &&
             (identical(other.postId, postId) || other.postId == postId));
   }
 
@@ -480,9 +484,9 @@ class _$OnRefreshCommentsEvent implements OnRefreshCommentsEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnRefreshCommentsEventCopyWith<_$OnRefreshCommentsEvent> get copyWith =>
-      __$$OnRefreshCommentsEventCopyWithImpl<_$OnRefreshCommentsEvent>(
-          this, _$identity);
+  _$$OnRefreshCommentsEventImplCopyWith<_$OnRefreshCommentsEventImpl>
+      get copyWith => __$$OnRefreshCommentsEventImplCopyWithImpl<
+          _$OnRefreshCommentsEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -558,14 +562,14 @@ class _$OnRefreshCommentsEvent implements OnRefreshCommentsEvent {
 
 abstract class OnRefreshCommentsEvent implements CommentsEvent {
   const factory OnRefreshCommentsEvent(final String postId) =
-      _$OnRefreshCommentsEvent;
+      _$OnRefreshCommentsEventImpl;
 
   @override
   String get postId;
   @override
   @JsonKey(ignore: true)
-  _$$OnRefreshCommentsEventCopyWith<_$OnRefreshCommentsEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnRefreshCommentsEventImplCopyWith<_$OnRefreshCommentsEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -647,11 +651,11 @@ class _$CommentsStateCopyWithImpl<$Res, $Val extends CommentsState>
 }
 
 /// @nodoc
-abstract class _$$_CommentsStateCopyWith<$Res>
+abstract class _$$CommentsStateImplCopyWith<$Res>
     implements $CommentsStateCopyWith<$Res> {
-  factory _$$_CommentsStateCopyWith(
-          _$_CommentsState value, $Res Function(_$_CommentsState) then) =
-      __$$_CommentsStateCopyWithImpl<$Res>;
+  factory _$$CommentsStateImplCopyWith(
+          _$CommentsStateImpl value, $Res Function(_$CommentsStateImpl) then) =
+      __$$CommentsStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -664,11 +668,11 @@ abstract class _$$_CommentsStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CommentsStateCopyWithImpl<$Res>
-    extends _$CommentsStateCopyWithImpl<$Res, _$_CommentsState>
-    implements _$$_CommentsStateCopyWith<$Res> {
-  __$$_CommentsStateCopyWithImpl(
-      _$_CommentsState _value, $Res Function(_$_CommentsState) _then)
+class __$$CommentsStateImplCopyWithImpl<$Res>
+    extends _$CommentsStateCopyWithImpl<$Res, _$CommentsStateImpl>
+    implements _$$CommentsStateImplCopyWith<$Res> {
+  __$$CommentsStateImplCopyWithImpl(
+      _$CommentsStateImpl _value, $Res Function(_$CommentsStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -681,7 +685,7 @@ class __$$_CommentsStateCopyWithImpl<$Res>
     Object? isPublishingComment = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_CommentsState(
+    return _then(_$CommentsStateImpl(
       postId: null == postId
           ? _value.postId
           : postId // ignore: cast_nullable_to_non_nullable
@@ -712,8 +716,8 @@ class __$$_CommentsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_CommentsState implements _CommentsState {
-  const _$_CommentsState(
+class _$CommentsStateImpl implements _CommentsState {
+  const _$CommentsStateImpl(
       {this.postId = "",
       this.authUserImageUrl = "https://i.stack.imgur.com/l60Hf.png",
       final List<CommentBO> commentsByPost = const [],
@@ -755,7 +759,7 @@ class _$_CommentsState implements _CommentsState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CommentsState &&
+            other is _$CommentsStateImpl &&
             (identical(other.postId, postId) || other.postId == postId) &&
             (identical(other.authUserImageUrl, authUserImageUrl) ||
                 other.authUserImageUrl == authUserImageUrl) &&
@@ -782,8 +786,8 @@ class _$_CommentsState implements _CommentsState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CommentsStateCopyWith<_$_CommentsState> get copyWith =>
-      __$$_CommentsStateCopyWithImpl<_$_CommentsState>(this, _$identity);
+  _$$CommentsStateImplCopyWith<_$CommentsStateImpl> get copyWith =>
+      __$$CommentsStateImplCopyWithImpl<_$CommentsStateImpl>(this, _$identity);
 }
 
 abstract class _CommentsState implements CommentsState {
@@ -793,7 +797,7 @@ abstract class _CommentsState implements CommentsState {
       final List<CommentBO> commentsByPost,
       final bool isLoading,
       final bool isPublishingComment,
-      final String? errorMessage}) = _$_CommentsState;
+      final String? errorMessage}) = _$CommentsStateImpl;
 
   @override
   String get postId;
@@ -809,6 +813,6 @@ abstract class _CommentsState implements CommentsState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_CommentsStateCopyWith<_$_CommentsState> get copyWith =>
+  _$$CommentsStateImplCopyWith<_$CommentsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

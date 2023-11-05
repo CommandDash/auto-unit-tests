@@ -33,13 +33,14 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<CreateRoomBloc, CreateRoomState>(listener: (context, state) {
+    return BlocConsumer<CreateRoomBloc, CreateRoomState>(
+        listener: (context, state) {
       if (context.mounted) {
         if (state.errorMessage != null) {
           showErrorSnackBar(context: context, message: state.errorMessage!);
         }
       }
-      if(state.roomCreated != null) {
+      if (state.roomCreated != null) {
         widget.onRoomCreated(state.roomCreated!);
       }
     }, builder: (context, state) {
@@ -94,13 +95,15 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
                   itemBuilder: (context, index) {
                     final user = state.users[index];
                     return Container(
-                        padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 4, horizontal: 4),
                         color: primaryColor,
                         child: InkWell(
                           onTap: () => _onCreateRoom(user.uid),
                           child: UserListTile(
                               userBO: state.users[index],
-                              isAuthUser: state.users[index].uid == state.authUserUuid),
+                              isAuthUser:
+                                  state.users[index].uid == state.authUserUuid),
                         ));
                   },
                 )

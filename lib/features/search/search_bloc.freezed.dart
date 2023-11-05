@@ -87,20 +87,20 @@ class _$SearchEventCopyWithImpl<$Res, $Val extends SearchEvent>
 }
 
 /// @nodoc
-abstract class _$$OnSearchUsersEventCopyWith<$Res> {
-  factory _$$OnSearchUsersEventCopyWith(_$OnSearchUsersEvent value,
-          $Res Function(_$OnSearchUsersEvent) then) =
-      __$$OnSearchUsersEventCopyWithImpl<$Res>;
+abstract class _$$OnSearchUsersEventImplCopyWith<$Res> {
+  factory _$$OnSearchUsersEventImplCopyWith(_$OnSearchUsersEventImpl value,
+          $Res Function(_$OnSearchUsersEventImpl) then) =
+      __$$OnSearchUsersEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String term});
 }
 
 /// @nodoc
-class __$$OnSearchUsersEventCopyWithImpl<$Res>
-    extends _$SearchEventCopyWithImpl<$Res, _$OnSearchUsersEvent>
-    implements _$$OnSearchUsersEventCopyWith<$Res> {
-  __$$OnSearchUsersEventCopyWithImpl(
-      _$OnSearchUsersEvent _value, $Res Function(_$OnSearchUsersEvent) _then)
+class __$$OnSearchUsersEventImplCopyWithImpl<$Res>
+    extends _$SearchEventCopyWithImpl<$Res, _$OnSearchUsersEventImpl>
+    implements _$$OnSearchUsersEventImplCopyWith<$Res> {
+  __$$OnSearchUsersEventImplCopyWithImpl(_$OnSearchUsersEventImpl _value,
+      $Res Function(_$OnSearchUsersEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -108,7 +108,7 @@ class __$$OnSearchUsersEventCopyWithImpl<$Res>
   $Res call({
     Object? term = null,
   }) {
-    return _then(_$OnSearchUsersEvent(
+    return _then(_$OnSearchUsersEventImpl(
       null == term
           ? _value.term
           : term // ignore: cast_nullable_to_non_nullable
@@ -119,8 +119,8 @@ class __$$OnSearchUsersEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSearchUsersEvent implements OnSearchUsersEvent {
-  const _$OnSearchUsersEvent(this.term);
+class _$OnSearchUsersEventImpl implements OnSearchUsersEvent {
+  const _$OnSearchUsersEventImpl(this.term);
 
   @override
   final String term;
@@ -134,7 +134,7 @@ class _$OnSearchUsersEvent implements OnSearchUsersEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnSearchUsersEvent &&
+            other is _$OnSearchUsersEventImpl &&
             (identical(other.term, term) || other.term == term));
   }
 
@@ -144,8 +144,8 @@ class _$OnSearchUsersEvent implements OnSearchUsersEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnSearchUsersEventCopyWith<_$OnSearchUsersEvent> get copyWith =>
-      __$$OnSearchUsersEventCopyWithImpl<_$OnSearchUsersEvent>(
+  _$$OnSearchUsersEventImplCopyWith<_$OnSearchUsersEventImpl> get copyWith =>
+      __$$OnSearchUsersEventImplCopyWithImpl<_$OnSearchUsersEventImpl>(
           this, _$identity);
 
   @override
@@ -224,31 +224,32 @@ class _$OnSearchUsersEvent implements OnSearchUsersEvent {
 }
 
 abstract class OnSearchUsersEvent implements SearchEvent {
-  const factory OnSearchUsersEvent(final String term) = _$OnSearchUsersEvent;
+  const factory OnSearchUsersEvent(final String term) =
+      _$OnSearchUsersEventImpl;
 
   String get term;
   @JsonKey(ignore: true)
-  _$$OnSearchUsersEventCopyWith<_$OnSearchUsersEvent> get copyWith =>
+  _$$OnSearchUsersEventImplCopyWith<_$OnSearchUsersEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnLoadLastPostsPublishedEventCopyWith<$Res> {
-  factory _$$OnLoadLastPostsPublishedEventCopyWith(
-          _$OnLoadLastPostsPublishedEvent value,
-          $Res Function(_$OnLoadLastPostsPublishedEvent) then) =
-      __$$OnLoadLastPostsPublishedEventCopyWithImpl<$Res>;
+abstract class _$$OnLoadLastPostsPublishedEventImplCopyWith<$Res> {
+  factory _$$OnLoadLastPostsPublishedEventImplCopyWith(
+          _$OnLoadLastPostsPublishedEventImpl value,
+          $Res Function(_$OnLoadLastPostsPublishedEventImpl) then) =
+      __$$OnLoadLastPostsPublishedEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String authUserUid});
 }
 
 /// @nodoc
-class __$$OnLoadLastPostsPublishedEventCopyWithImpl<$Res>
-    extends _$SearchEventCopyWithImpl<$Res, _$OnLoadLastPostsPublishedEvent>
-    implements _$$OnLoadLastPostsPublishedEventCopyWith<$Res> {
-  __$$OnLoadLastPostsPublishedEventCopyWithImpl(
-      _$OnLoadLastPostsPublishedEvent _value,
-      $Res Function(_$OnLoadLastPostsPublishedEvent) _then)
+class __$$OnLoadLastPostsPublishedEventImplCopyWithImpl<$Res>
+    extends _$SearchEventCopyWithImpl<$Res, _$OnLoadLastPostsPublishedEventImpl>
+    implements _$$OnLoadLastPostsPublishedEventImplCopyWith<$Res> {
+  __$$OnLoadLastPostsPublishedEventImplCopyWithImpl(
+      _$OnLoadLastPostsPublishedEventImpl _value,
+      $Res Function(_$OnLoadLastPostsPublishedEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -256,7 +257,7 @@ class __$$OnLoadLastPostsPublishedEventCopyWithImpl<$Res>
   $Res call({
     Object? authUserUid = null,
   }) {
-    return _then(_$OnLoadLastPostsPublishedEvent(
+    return _then(_$OnLoadLastPostsPublishedEventImpl(
       null == authUserUid
           ? _value.authUserUid
           : authUserUid // ignore: cast_nullable_to_non_nullable
@@ -267,8 +268,9 @@ class __$$OnLoadLastPostsPublishedEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadLastPostsPublishedEvent implements OnLoadLastPostsPublishedEvent {
-  const _$OnLoadLastPostsPublishedEvent(this.authUserUid);
+class _$OnLoadLastPostsPublishedEventImpl
+    implements OnLoadLastPostsPublishedEvent {
+  const _$OnLoadLastPostsPublishedEventImpl(this.authUserUid);
 
   @override
   final String authUserUid;
@@ -282,7 +284,7 @@ class _$OnLoadLastPostsPublishedEvent implements OnLoadLastPostsPublishedEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadLastPostsPublishedEvent &&
+            other is _$OnLoadLastPostsPublishedEventImpl &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid));
   }
@@ -293,9 +295,10 @@ class _$OnLoadLastPostsPublishedEvent implements OnLoadLastPostsPublishedEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadLastPostsPublishedEventCopyWith<_$OnLoadLastPostsPublishedEvent>
-      get copyWith => __$$OnLoadLastPostsPublishedEventCopyWithImpl<
-          _$OnLoadLastPostsPublishedEvent>(this, _$identity);
+  _$$OnLoadLastPostsPublishedEventImplCopyWith<
+          _$OnLoadLastPostsPublishedEventImpl>
+      get copyWith => __$$OnLoadLastPostsPublishedEventImplCopyWithImpl<
+          _$OnLoadLastPostsPublishedEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -374,29 +377,30 @@ class _$OnLoadLastPostsPublishedEvent implements OnLoadLastPostsPublishedEvent {
 
 abstract class OnLoadLastPostsPublishedEvent implements SearchEvent {
   const factory OnLoadLastPostsPublishedEvent(final String authUserUid) =
-      _$OnLoadLastPostsPublishedEvent;
+      _$OnLoadLastPostsPublishedEventImpl;
 
   String get authUserUid;
   @JsonKey(ignore: true)
-  _$$OnLoadLastPostsPublishedEventCopyWith<_$OnLoadLastPostsPublishedEvent>
+  _$$OnLoadLastPostsPublishedEventImplCopyWith<
+          _$OnLoadLastPostsPublishedEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnFollowUserEventCopyWith<$Res> {
-  factory _$$OnFollowUserEventCopyWith(
-          _$OnFollowUserEvent value, $Res Function(_$OnFollowUserEvent) then) =
-      __$$OnFollowUserEventCopyWithImpl<$Res>;
+abstract class _$$OnFollowUserEventImplCopyWith<$Res> {
+  factory _$$OnFollowUserEventImplCopyWith(_$OnFollowUserEventImpl value,
+          $Res Function(_$OnFollowUserEventImpl) then) =
+      __$$OnFollowUserEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userUid});
 }
 
 /// @nodoc
-class __$$OnFollowUserEventCopyWithImpl<$Res>
-    extends _$SearchEventCopyWithImpl<$Res, _$OnFollowUserEvent>
-    implements _$$OnFollowUserEventCopyWith<$Res> {
-  __$$OnFollowUserEventCopyWithImpl(
-      _$OnFollowUserEvent _value, $Res Function(_$OnFollowUserEvent) _then)
+class __$$OnFollowUserEventImplCopyWithImpl<$Res>
+    extends _$SearchEventCopyWithImpl<$Res, _$OnFollowUserEventImpl>
+    implements _$$OnFollowUserEventImplCopyWith<$Res> {
+  __$$OnFollowUserEventImplCopyWithImpl(_$OnFollowUserEventImpl _value,
+      $Res Function(_$OnFollowUserEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -404,7 +408,7 @@ class __$$OnFollowUserEventCopyWithImpl<$Res>
   $Res call({
     Object? userUid = null,
   }) {
-    return _then(_$OnFollowUserEvent(
+    return _then(_$OnFollowUserEventImpl(
       null == userUid
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
@@ -415,8 +419,8 @@ class __$$OnFollowUserEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnFollowUserEvent implements OnFollowUserEvent {
-  const _$OnFollowUserEvent(this.userUid);
+class _$OnFollowUserEventImpl implements OnFollowUserEvent {
+  const _$OnFollowUserEventImpl(this.userUid);
 
   @override
   final String userUid;
@@ -430,7 +434,7 @@ class _$OnFollowUserEvent implements OnFollowUserEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnFollowUserEvent &&
+            other is _$OnFollowUserEventImpl &&
             (identical(other.userUid, userUid) || other.userUid == userUid));
   }
 
@@ -440,8 +444,9 @@ class _$OnFollowUserEvent implements OnFollowUserEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnFollowUserEventCopyWith<_$OnFollowUserEvent> get copyWith =>
-      __$$OnFollowUserEventCopyWithImpl<_$OnFollowUserEvent>(this, _$identity);
+  _$$OnFollowUserEventImplCopyWith<_$OnFollowUserEventImpl> get copyWith =>
+      __$$OnFollowUserEventImplCopyWithImpl<_$OnFollowUserEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -519,29 +524,30 @@ class _$OnFollowUserEvent implements OnFollowUserEvent {
 }
 
 abstract class OnFollowUserEvent implements SearchEvent {
-  const factory OnFollowUserEvent(final String userUid) = _$OnFollowUserEvent;
+  const factory OnFollowUserEvent(final String userUid) =
+      _$OnFollowUserEventImpl;
 
   String get userUid;
   @JsonKey(ignore: true)
-  _$$OnFollowUserEventCopyWith<_$OnFollowUserEvent> get copyWith =>
+  _$$OnFollowUserEventImplCopyWith<_$OnFollowUserEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnUnFollowUserEventCopyWith<$Res> {
-  factory _$$OnUnFollowUserEventCopyWith(_$OnUnFollowUserEvent value,
-          $Res Function(_$OnUnFollowUserEvent) then) =
-      __$$OnUnFollowUserEventCopyWithImpl<$Res>;
+abstract class _$$OnUnFollowUserEventImplCopyWith<$Res> {
+  factory _$$OnUnFollowUserEventImplCopyWith(_$OnUnFollowUserEventImpl value,
+          $Res Function(_$OnUnFollowUserEventImpl) then) =
+      __$$OnUnFollowUserEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userUid});
 }
 
 /// @nodoc
-class __$$OnUnFollowUserEventCopyWithImpl<$Res>
-    extends _$SearchEventCopyWithImpl<$Res, _$OnUnFollowUserEvent>
-    implements _$$OnUnFollowUserEventCopyWith<$Res> {
-  __$$OnUnFollowUserEventCopyWithImpl(
-      _$OnUnFollowUserEvent _value, $Res Function(_$OnUnFollowUserEvent) _then)
+class __$$OnUnFollowUserEventImplCopyWithImpl<$Res>
+    extends _$SearchEventCopyWithImpl<$Res, _$OnUnFollowUserEventImpl>
+    implements _$$OnUnFollowUserEventImplCopyWith<$Res> {
+  __$$OnUnFollowUserEventImplCopyWithImpl(_$OnUnFollowUserEventImpl _value,
+      $Res Function(_$OnUnFollowUserEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -549,7 +555,7 @@ class __$$OnUnFollowUserEventCopyWithImpl<$Res>
   $Res call({
     Object? userUid = null,
   }) {
-    return _then(_$OnUnFollowUserEvent(
+    return _then(_$OnUnFollowUserEventImpl(
       null == userUid
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
@@ -560,8 +566,8 @@ class __$$OnUnFollowUserEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUnFollowUserEvent implements OnUnFollowUserEvent {
-  const _$OnUnFollowUserEvent(this.userUid);
+class _$OnUnFollowUserEventImpl implements OnUnFollowUserEvent {
+  const _$OnUnFollowUserEventImpl(this.userUid);
 
   @override
   final String userUid;
@@ -575,7 +581,7 @@ class _$OnUnFollowUserEvent implements OnUnFollowUserEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnUnFollowUserEvent &&
+            other is _$OnUnFollowUserEventImpl &&
             (identical(other.userUid, userUid) || other.userUid == userUid));
   }
 
@@ -585,8 +591,8 @@ class _$OnUnFollowUserEvent implements OnUnFollowUserEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnUnFollowUserEventCopyWith<_$OnUnFollowUserEvent> get copyWith =>
-      __$$OnUnFollowUserEventCopyWithImpl<_$OnUnFollowUserEvent>(
+  _$$OnUnFollowUserEventImplCopyWith<_$OnUnFollowUserEventImpl> get copyWith =>
+      __$$OnUnFollowUserEventImplCopyWithImpl<_$OnUnFollowUserEventImpl>(
           this, _$identity);
 
   @override
@@ -666,11 +672,11 @@ class _$OnUnFollowUserEvent implements OnUnFollowUserEvent {
 
 abstract class OnUnFollowUserEvent implements SearchEvent {
   const factory OnUnFollowUserEvent(final String userUid) =
-      _$OnUnFollowUserEvent;
+      _$OnUnFollowUserEventImpl;
 
   String get userUid;
   @JsonKey(ignore: true)
-  _$$OnUnFollowUserEventCopyWith<_$OnUnFollowUserEvent> get copyWith =>
+  _$$OnUnFollowUserEventImplCopyWith<_$OnUnFollowUserEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -760,11 +766,11 @@ class _$SearchStateCopyWithImpl<$Res, $Val extends SearchState>
 }
 
 /// @nodoc
-abstract class _$$_SearchStateCopyWith<$Res>
+abstract class _$$SearchStateImplCopyWith<$Res>
     implements $SearchStateCopyWith<$Res> {
-  factory _$$_SearchStateCopyWith(
-          _$_SearchState value, $Res Function(_$_SearchState) then) =
-      __$$_SearchStateCopyWithImpl<$Res>;
+  factory _$$SearchStateImplCopyWith(
+          _$SearchStateImpl value, $Res Function(_$SearchStateImpl) then) =
+      __$$SearchStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -778,11 +784,11 @@ abstract class _$$_SearchStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SearchStateCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_SearchState>
-    implements _$$_SearchStateCopyWith<$Res> {
-  __$$_SearchStateCopyWithImpl(
-      _$_SearchState _value, $Res Function(_$_SearchState) _then)
+class __$$SearchStateImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$SearchStateImpl>
+    implements _$$SearchStateImplCopyWith<$Res> {
+  __$$SearchStateImplCopyWithImpl(
+      _$SearchStateImpl _value, $Res Function(_$SearchStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -796,7 +802,7 @@ class __$$_SearchStateCopyWithImpl<$Res>
     Object? posts = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_SearchState(
+    return _then(_$SearchStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -831,8 +837,8 @@ class __$$_SearchStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SearchState implements _SearchState {
-  const _$_SearchState(
+class _$SearchStateImpl implements _SearchState {
+  const _$SearchStateImpl(
       {this.isLoading = false,
       this.isShowUsers = false,
       this.allowUserInput = true,
@@ -885,7 +891,7 @@ class _$_SearchState implements _SearchState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SearchState &&
+            other is _$SearchStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.isShowUsers, isShowUsers) ||
@@ -914,8 +920,8 @@ class _$_SearchState implements _SearchState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SearchStateCopyWith<_$_SearchState> get copyWith =>
-      __$$_SearchStateCopyWithImpl<_$_SearchState>(this, _$identity);
+  _$$SearchStateImplCopyWith<_$SearchStateImpl> get copyWith =>
+      __$$SearchStateImplCopyWithImpl<_$SearchStateImpl>(this, _$identity);
 }
 
 abstract class _SearchState implements SearchState {
@@ -926,7 +932,7 @@ abstract class _SearchState implements SearchState {
       final String authUserUuid,
       final List<UserBO> users,
       final List<PostBO> posts,
-      final String? errorMessage}) = _$_SearchState;
+      final String? errorMessage}) = _$SearchStateImpl;
 
   @override
   bool get isLoading;
@@ -944,6 +950,6 @@ abstract class _SearchState implements SearchState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_SearchStateCopyWith<_$_SearchState> get copyWith =>
+  _$$SearchStateImplCopyWith<_$SearchStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

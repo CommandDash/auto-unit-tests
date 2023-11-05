@@ -75,20 +75,20 @@ class _$RoomsEventCopyWithImpl<$Res, $Val extends RoomsEvent>
 }
 
 /// @nodoc
-abstract class _$$OnLoadUserRoomsEventCopyWith<$Res> {
-  factory _$$OnLoadUserRoomsEventCopyWith(_$OnLoadUserRoomsEvent value,
-          $Res Function(_$OnLoadUserRoomsEvent) then) =
-      __$$OnLoadUserRoomsEventCopyWithImpl<$Res>;
+abstract class _$$OnLoadUserRoomsEventImplCopyWith<$Res> {
+  factory _$$OnLoadUserRoomsEventImplCopyWith(_$OnLoadUserRoomsEventImpl value,
+          $Res Function(_$OnLoadUserRoomsEventImpl) then) =
+      __$$OnLoadUserRoomsEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String authUserUuid});
 }
 
 /// @nodoc
-class __$$OnLoadUserRoomsEventCopyWithImpl<$Res>
-    extends _$RoomsEventCopyWithImpl<$Res, _$OnLoadUserRoomsEvent>
-    implements _$$OnLoadUserRoomsEventCopyWith<$Res> {
-  __$$OnLoadUserRoomsEventCopyWithImpl(_$OnLoadUserRoomsEvent _value,
-      $Res Function(_$OnLoadUserRoomsEvent) _then)
+class __$$OnLoadUserRoomsEventImplCopyWithImpl<$Res>
+    extends _$RoomsEventCopyWithImpl<$Res, _$OnLoadUserRoomsEventImpl>
+    implements _$$OnLoadUserRoomsEventImplCopyWith<$Res> {
+  __$$OnLoadUserRoomsEventImplCopyWithImpl(_$OnLoadUserRoomsEventImpl _value,
+      $Res Function(_$OnLoadUserRoomsEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -96,7 +96,7 @@ class __$$OnLoadUserRoomsEventCopyWithImpl<$Res>
   $Res call({
     Object? authUserUuid = null,
   }) {
-    return _then(_$OnLoadUserRoomsEvent(
+    return _then(_$OnLoadUserRoomsEventImpl(
       null == authUserUuid
           ? _value.authUserUuid
           : authUserUuid // ignore: cast_nullable_to_non_nullable
@@ -107,8 +107,8 @@ class __$$OnLoadUserRoomsEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadUserRoomsEvent implements OnLoadUserRoomsEvent {
-  const _$OnLoadUserRoomsEvent(this.authUserUuid);
+class _$OnLoadUserRoomsEventImpl implements OnLoadUserRoomsEvent {
+  const _$OnLoadUserRoomsEventImpl(this.authUserUuid);
 
   @override
   final String authUserUuid;
@@ -122,7 +122,7 @@ class _$OnLoadUserRoomsEvent implements OnLoadUserRoomsEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadUserRoomsEvent &&
+            other is _$OnLoadUserRoomsEventImpl &&
             (identical(other.authUserUuid, authUserUuid) ||
                 other.authUserUuid == authUserUuid));
   }
@@ -133,9 +133,10 @@ class _$OnLoadUserRoomsEvent implements OnLoadUserRoomsEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadUserRoomsEventCopyWith<_$OnLoadUserRoomsEvent> get copyWith =>
-      __$$OnLoadUserRoomsEventCopyWithImpl<_$OnLoadUserRoomsEvent>(
-          this, _$identity);
+  _$$OnLoadUserRoomsEventImplCopyWith<_$OnLoadUserRoomsEventImpl>
+      get copyWith =>
+          __$$OnLoadUserRoomsEventImplCopyWithImpl<_$OnLoadUserRoomsEventImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -202,29 +203,29 @@ class _$OnLoadUserRoomsEvent implements OnLoadUserRoomsEvent {
 
 abstract class OnLoadUserRoomsEvent implements RoomsEvent {
   const factory OnLoadUserRoomsEvent(final String authUserUuid) =
-      _$OnLoadUserRoomsEvent;
+      _$OnLoadUserRoomsEventImpl;
 
   String get authUserUuid;
   @JsonKey(ignore: true)
-  _$$OnLoadUserRoomsEventCopyWith<_$OnLoadUserRoomsEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnLoadUserRoomsEventImplCopyWith<_$OnLoadUserRoomsEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnDeleteRoomEventCopyWith<$Res> {
-  factory _$$OnDeleteRoomEventCopyWith(
-          _$OnDeleteRoomEvent value, $Res Function(_$OnDeleteRoomEvent) then) =
-      __$$OnDeleteRoomEventCopyWithImpl<$Res>;
+abstract class _$$OnDeleteRoomEventImplCopyWith<$Res> {
+  factory _$$OnDeleteRoomEventImplCopyWith(_$OnDeleteRoomEventImpl value,
+          $Res Function(_$OnDeleteRoomEventImpl) then) =
+      __$$OnDeleteRoomEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String roomUuid});
 }
 
 /// @nodoc
-class __$$OnDeleteRoomEventCopyWithImpl<$Res>
-    extends _$RoomsEventCopyWithImpl<$Res, _$OnDeleteRoomEvent>
-    implements _$$OnDeleteRoomEventCopyWith<$Res> {
-  __$$OnDeleteRoomEventCopyWithImpl(
-      _$OnDeleteRoomEvent _value, $Res Function(_$OnDeleteRoomEvent) _then)
+class __$$OnDeleteRoomEventImplCopyWithImpl<$Res>
+    extends _$RoomsEventCopyWithImpl<$Res, _$OnDeleteRoomEventImpl>
+    implements _$$OnDeleteRoomEventImplCopyWith<$Res> {
+  __$$OnDeleteRoomEventImplCopyWithImpl(_$OnDeleteRoomEventImpl _value,
+      $Res Function(_$OnDeleteRoomEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -232,7 +233,7 @@ class __$$OnDeleteRoomEventCopyWithImpl<$Res>
   $Res call({
     Object? roomUuid = null,
   }) {
-    return _then(_$OnDeleteRoomEvent(
+    return _then(_$OnDeleteRoomEventImpl(
       null == roomUuid
           ? _value.roomUuid
           : roomUuid // ignore: cast_nullable_to_non_nullable
@@ -243,8 +244,8 @@ class __$$OnDeleteRoomEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnDeleteRoomEvent implements OnDeleteRoomEvent {
-  const _$OnDeleteRoomEvent(this.roomUuid);
+class _$OnDeleteRoomEventImpl implements OnDeleteRoomEvent {
+  const _$OnDeleteRoomEventImpl(this.roomUuid);
 
   @override
   final String roomUuid;
@@ -258,7 +259,7 @@ class _$OnDeleteRoomEvent implements OnDeleteRoomEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnDeleteRoomEvent &&
+            other is _$OnDeleteRoomEventImpl &&
             (identical(other.roomUuid, roomUuid) ||
                 other.roomUuid == roomUuid));
   }
@@ -269,8 +270,9 @@ class _$OnDeleteRoomEvent implements OnDeleteRoomEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnDeleteRoomEventCopyWith<_$OnDeleteRoomEvent> get copyWith =>
-      __$$OnDeleteRoomEventCopyWithImpl<_$OnDeleteRoomEvent>(this, _$identity);
+  _$$OnDeleteRoomEventImplCopyWith<_$OnDeleteRoomEventImpl> get copyWith =>
+      __$$OnDeleteRoomEventImplCopyWithImpl<_$OnDeleteRoomEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -336,11 +338,12 @@ class _$OnDeleteRoomEvent implements OnDeleteRoomEvent {
 }
 
 abstract class OnDeleteRoomEvent implements RoomsEvent {
-  const factory OnDeleteRoomEvent(final String roomUuid) = _$OnDeleteRoomEvent;
+  const factory OnDeleteRoomEvent(final String roomUuid) =
+      _$OnDeleteRoomEventImpl;
 
   String get roomUuid;
   @JsonKey(ignore: true)
-  _$$OnDeleteRoomEventCopyWith<_$OnDeleteRoomEvent> get copyWith =>
+  _$$OnDeleteRoomEventImplCopyWith<_$OnDeleteRoomEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -409,11 +412,11 @@ class _$RoomsStateCopyWithImpl<$Res, $Val extends RoomsState>
 }
 
 /// @nodoc
-abstract class _$$_RoomsStateCopyWith<$Res>
+abstract class _$$RoomsStateImplCopyWith<$Res>
     implements $RoomsStateCopyWith<$Res> {
-  factory _$$_RoomsStateCopyWith(
-          _$_RoomsState value, $Res Function(_$_RoomsState) then) =
-      __$$_RoomsStateCopyWithImpl<$Res>;
+  factory _$$RoomsStateImplCopyWith(
+          _$RoomsStateImpl value, $Res Function(_$RoomsStateImpl) then) =
+      __$$RoomsStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -424,11 +427,11 @@ abstract class _$$_RoomsStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_RoomsStateCopyWithImpl<$Res>
-    extends _$RoomsStateCopyWithImpl<$Res, _$_RoomsState>
-    implements _$$_RoomsStateCopyWith<$Res> {
-  __$$_RoomsStateCopyWithImpl(
-      _$_RoomsState _value, $Res Function(_$_RoomsState) _then)
+class __$$RoomsStateImplCopyWithImpl<$Res>
+    extends _$RoomsStateCopyWithImpl<$Res, _$RoomsStateImpl>
+    implements _$$RoomsStateImplCopyWith<$Res> {
+  __$$RoomsStateImplCopyWithImpl(
+      _$RoomsStateImpl _value, $Res Function(_$RoomsStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -439,7 +442,7 @@ class __$$_RoomsStateCopyWithImpl<$Res>
     Object? rooms = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_RoomsState(
+    return _then(_$RoomsStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -462,8 +465,8 @@ class __$$_RoomsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RoomsState implements _RoomsState {
-  const _$_RoomsState(
+class _$RoomsStateImpl implements _RoomsState {
+  const _$RoomsStateImpl(
       {this.isLoading = false,
       this.authUserUuid = "",
       final List<RoomBO> rooms = const [],
@@ -497,7 +500,7 @@ class _$_RoomsState implements _RoomsState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomsState &&
+            other is _$RoomsStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.authUserUuid, authUserUuid) ||
@@ -514,8 +517,8 @@ class _$_RoomsState implements _RoomsState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RoomsStateCopyWith<_$_RoomsState> get copyWith =>
-      __$$_RoomsStateCopyWithImpl<_$_RoomsState>(this, _$identity);
+  _$$RoomsStateImplCopyWith<_$RoomsStateImpl> get copyWith =>
+      __$$RoomsStateImplCopyWithImpl<_$RoomsStateImpl>(this, _$identity);
 }
 
 abstract class _RoomsState implements RoomsState {
@@ -523,7 +526,7 @@ abstract class _RoomsState implements RoomsState {
       {final bool isLoading,
       final String authUserUuid,
       final List<RoomBO> rooms,
-      final String? errorMessage}) = _$_RoomsState;
+      final String? errorMessage}) = _$RoomsStateImpl;
 
   @override
   bool get isLoading;
@@ -535,6 +538,6 @@ abstract class _RoomsState implements RoomsState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_RoomsStateCopyWith<_$_RoomsState> get copyWith =>
+  _$$RoomsStateImplCopyWith<_$RoomsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

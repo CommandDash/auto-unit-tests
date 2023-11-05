@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 abstract class LifecycleWatcherState<T extends StatefulWidget> extends State<T>
     with WidgetsBindingObserver {
-
   @override
   void initState() {
     debugPrint("initState add observer to WidgetsBinding");
@@ -37,6 +36,8 @@ abstract class LifecycleWatcherState<T extends StatefulWidget> extends State<T>
         debugPrint("onDetached CALLED");
         onDetached();
         break;
+      case AppLifecycleState.hidden:
+      // TODO: Handle this case.
     }
   }
 

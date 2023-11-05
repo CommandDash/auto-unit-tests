@@ -81,7 +81,7 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
           children: <Widget>[
             SizedBox(height: widget.iconSize),
             Text(
-              widget.centerItemText ?? '',
+              widget.centerItemText,
               style: TextStyle(color: widget.color),
             ),
           ],

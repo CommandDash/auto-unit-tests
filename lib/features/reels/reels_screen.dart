@@ -8,7 +8,9 @@ import 'package:pic_connect/utils/colors.dart';
 import 'package:pic_connect/utils/utils.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
 class ReelsViewerScreen extends StatefulWidget {
   final Function(String postId) onGoToCommentsByPost;
   final Function(String userUid) onShowUserProfile;

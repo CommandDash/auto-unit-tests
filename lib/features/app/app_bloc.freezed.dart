@@ -68,25 +68,25 @@ class _$AppEventCopyWithImpl<$Res, $Val extends AppEvent>
 }
 
 /// @nodoc
-abstract class _$$OnVerifySessionCopyWith<$Res> {
-  factory _$$OnVerifySessionCopyWith(
-          _$OnVerifySession value, $Res Function(_$OnVerifySession) then) =
-      __$$OnVerifySessionCopyWithImpl<$Res>;
+abstract class _$$OnVerifySessionImplCopyWith<$Res> {
+  factory _$$OnVerifySessionImplCopyWith(_$OnVerifySessionImpl value,
+          $Res Function(_$OnVerifySessionImpl) then) =
+      __$$OnVerifySessionImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OnVerifySessionCopyWithImpl<$Res>
-    extends _$AppEventCopyWithImpl<$Res, _$OnVerifySession>
-    implements _$$OnVerifySessionCopyWith<$Res> {
-  __$$OnVerifySessionCopyWithImpl(
-      _$OnVerifySession _value, $Res Function(_$OnVerifySession) _then)
+class __$$OnVerifySessionImplCopyWithImpl<$Res>
+    extends _$AppEventCopyWithImpl<$Res, _$OnVerifySessionImpl>
+    implements _$$OnVerifySessionImplCopyWith<$Res> {
+  __$$OnVerifySessionImplCopyWithImpl(
+      _$OnVerifySessionImpl _value, $Res Function(_$OnVerifySessionImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$OnVerifySession implements OnVerifySession {
-  const _$OnVerifySession();
+class _$OnVerifySessionImpl implements OnVerifySession {
+  const _$OnVerifySessionImpl();
 
   @override
   String toString() {
@@ -96,7 +96,7 @@ class _$OnVerifySession implements OnVerifySession {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OnVerifySession);
+        (other.runtimeType == runtimeType && other is _$OnVerifySessionImpl);
   }
 
   @override
@@ -160,7 +160,7 @@ class _$OnVerifySession implements OnVerifySession {
 }
 
 abstract class OnVerifySession implements AppEvent {
-  const factory OnVerifySession() = _$OnVerifySession;
+  const factory OnVerifySession() = _$OnVerifySessionImpl;
 }
 
 /// @nodoc
@@ -205,21 +205,22 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
 }
 
 /// @nodoc
-abstract class _$$_AppStateCopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory _$$_AppStateCopyWith(
-          _$_AppState value, $Res Function(_$_AppState) then) =
-      __$$_AppStateCopyWithImpl<$Res>;
+abstract class _$$AppStateImplCopyWith<$Res>
+    implements $AppStateCopyWith<$Res> {
+  factory _$$AppStateImplCopyWith(
+          _$AppStateImpl value, $Res Function(_$AppStateImpl) then) =
+      __$$AppStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? authUserUid});
 }
 
 /// @nodoc
-class __$$_AppStateCopyWithImpl<$Res>
-    extends _$AppStateCopyWithImpl<$Res, _$_AppState>
-    implements _$$_AppStateCopyWith<$Res> {
-  __$$_AppStateCopyWithImpl(
-      _$_AppState _value, $Res Function(_$_AppState) _then)
+class __$$AppStateImplCopyWithImpl<$Res>
+    extends _$AppStateCopyWithImpl<$Res, _$AppStateImpl>
+    implements _$$AppStateImplCopyWith<$Res> {
+  __$$AppStateImplCopyWithImpl(
+      _$AppStateImpl _value, $Res Function(_$AppStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -227,7 +228,7 @@ class __$$_AppStateCopyWithImpl<$Res>
   $Res call({
     Object? authUserUid = freezed,
   }) {
-    return _then(_$_AppState(
+    return _then(_$AppStateImpl(
       authUserUid: freezed == authUserUid
           ? _value.authUserUid
           : authUserUid // ignore: cast_nullable_to_non_nullable
@@ -238,8 +239,8 @@ class __$$_AppStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AppState implements _AppState {
-  const _$_AppState({this.authUserUid});
+class _$AppStateImpl implements _AppState {
+  const _$AppStateImpl({this.authUserUid});
 
   @override
   final String? authUserUid;
@@ -253,7 +254,7 @@ class _$_AppState implements _AppState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AppState &&
+            other is _$AppStateImpl &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid));
   }
@@ -264,17 +265,17 @@ class _$_AppState implements _AppState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AppStateCopyWith<_$_AppState> get copyWith =>
-      __$$_AppStateCopyWithImpl<_$_AppState>(this, _$identity);
+  _$$AppStateImplCopyWith<_$AppStateImpl> get copyWith =>
+      __$$AppStateImplCopyWithImpl<_$AppStateImpl>(this, _$identity);
 }
 
 abstract class _AppState implements AppState {
-  const factory _AppState({final String? authUserUid}) = _$_AppState;
+  const factory _AppState({final String? authUserUid}) = _$AppStateImpl;
 
   @override
   String? get authUserUid;
   @override
   @JsonKey(ignore: true)
-  _$$_AppStateCopyWith<_$_AppState> get copyWith =>
+  _$$AppStateImplCopyWith<_$AppStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

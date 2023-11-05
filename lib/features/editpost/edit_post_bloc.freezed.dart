@@ -79,20 +79,20 @@ class _$EditPostEventCopyWithImpl<$Res, $Val extends EditPostEvent>
 }
 
 /// @nodoc
-abstract class _$$OnEditPostEventCopyWith<$Res> {
-  factory _$$OnEditPostEventCopyWith(
-          _$OnEditPostEvent value, $Res Function(_$OnEditPostEvent) then) =
-      __$$OnEditPostEventCopyWithImpl<$Res>;
+abstract class _$$OnEditPostEventImplCopyWith<$Res> {
+  factory _$$OnEditPostEventImplCopyWith(_$OnEditPostEventImpl value,
+          $Res Function(_$OnEditPostEventImpl) then) =
+      __$$OnEditPostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String postUuid});
 }
 
 /// @nodoc
-class __$$OnEditPostEventCopyWithImpl<$Res>
-    extends _$EditPostEventCopyWithImpl<$Res, _$OnEditPostEvent>
-    implements _$$OnEditPostEventCopyWith<$Res> {
-  __$$OnEditPostEventCopyWithImpl(
-      _$OnEditPostEvent _value, $Res Function(_$OnEditPostEvent) _then)
+class __$$OnEditPostEventImplCopyWithImpl<$Res>
+    extends _$EditPostEventCopyWithImpl<$Res, _$OnEditPostEventImpl>
+    implements _$$OnEditPostEventImplCopyWith<$Res> {
+  __$$OnEditPostEventImplCopyWithImpl(
+      _$OnEditPostEventImpl _value, $Res Function(_$OnEditPostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -100,7 +100,7 @@ class __$$OnEditPostEventCopyWithImpl<$Res>
   $Res call({
     Object? postUuid = null,
   }) {
-    return _then(_$OnEditPostEvent(
+    return _then(_$OnEditPostEventImpl(
       null == postUuid
           ? _value.postUuid
           : postUuid // ignore: cast_nullable_to_non_nullable
@@ -111,8 +111,8 @@ class __$$OnEditPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnEditPostEvent implements OnEditPostEvent {
-  const _$OnEditPostEvent(this.postUuid);
+class _$OnEditPostEventImpl implements OnEditPostEvent {
+  const _$OnEditPostEventImpl(this.postUuid);
 
   @override
   final String postUuid;
@@ -126,7 +126,7 @@ class _$OnEditPostEvent implements OnEditPostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnEditPostEvent &&
+            other is _$OnEditPostEventImpl &&
             (identical(other.postUuid, postUuid) ||
                 other.postUuid == postUuid));
   }
@@ -137,8 +137,9 @@ class _$OnEditPostEvent implements OnEditPostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnEditPostEventCopyWith<_$OnEditPostEvent> get copyWith =>
-      __$$OnEditPostEventCopyWithImpl<_$OnEditPostEvent>(this, _$identity);
+  _$$OnEditPostEventImplCopyWith<_$OnEditPostEventImpl> get copyWith =>
+      __$$OnEditPostEventImplCopyWithImpl<_$OnEditPostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -208,29 +209,29 @@ class _$OnEditPostEvent implements OnEditPostEvent {
 }
 
 abstract class OnEditPostEvent implements EditPostEvent {
-  const factory OnEditPostEvent(final String postUuid) = _$OnEditPostEvent;
+  const factory OnEditPostEvent(final String postUuid) = _$OnEditPostEventImpl;
 
   String get postUuid;
   @JsonKey(ignore: true)
-  _$$OnEditPostEventCopyWith<_$OnEditPostEvent> get copyWith =>
+  _$$OnEditPostEventImplCopyWith<_$OnEditPostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnUpdatePostEventCopyWith<$Res> {
-  factory _$$OnUpdatePostEventCopyWith(
-          _$OnUpdatePostEvent value, $Res Function(_$OnUpdatePostEvent) then) =
-      __$$OnUpdatePostEventCopyWithImpl<$Res>;
+abstract class _$$OnUpdatePostEventImplCopyWith<$Res> {
+  factory _$$OnUpdatePostEventImplCopyWith(_$OnUpdatePostEventImpl value,
+          $Res Function(_$OnUpdatePostEventImpl) then) =
+      __$$OnUpdatePostEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String placeInfo, String description, List<String> tags});
 }
 
 /// @nodoc
-class __$$OnUpdatePostEventCopyWithImpl<$Res>
-    extends _$EditPostEventCopyWithImpl<$Res, _$OnUpdatePostEvent>
-    implements _$$OnUpdatePostEventCopyWith<$Res> {
-  __$$OnUpdatePostEventCopyWithImpl(
-      _$OnUpdatePostEvent _value, $Res Function(_$OnUpdatePostEvent) _then)
+class __$$OnUpdatePostEventImplCopyWithImpl<$Res>
+    extends _$EditPostEventCopyWithImpl<$Res, _$OnUpdatePostEventImpl>
+    implements _$$OnUpdatePostEventImplCopyWith<$Res> {
+  __$$OnUpdatePostEventImplCopyWithImpl(_$OnUpdatePostEventImpl _value,
+      $Res Function(_$OnUpdatePostEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -240,7 +241,7 @@ class __$$OnUpdatePostEventCopyWithImpl<$Res>
     Object? description = null,
     Object? tags = null,
   }) {
-    return _then(_$OnUpdatePostEvent(
+    return _then(_$OnUpdatePostEventImpl(
       null == placeInfo
           ? _value.placeInfo
           : placeInfo // ignore: cast_nullable_to_non_nullable
@@ -259,8 +260,8 @@ class __$$OnUpdatePostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUpdatePostEvent implements OnUpdatePostEvent {
-  const _$OnUpdatePostEvent(
+class _$OnUpdatePostEventImpl implements OnUpdatePostEvent {
+  const _$OnUpdatePostEventImpl(
       this.placeInfo, this.description, final List<String> tags)
       : _tags = tags;
 
@@ -285,7 +286,7 @@ class _$OnUpdatePostEvent implements OnUpdatePostEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnUpdatePostEvent &&
+            other is _$OnUpdatePostEventImpl &&
             (identical(other.placeInfo, placeInfo) ||
                 other.placeInfo == placeInfo) &&
             (identical(other.description, description) ||
@@ -300,8 +301,9 @@ class _$OnUpdatePostEvent implements OnUpdatePostEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnUpdatePostEventCopyWith<_$OnUpdatePostEvent> get copyWith =>
-      __$$OnUpdatePostEventCopyWithImpl<_$OnUpdatePostEvent>(this, _$identity);
+  _$$OnUpdatePostEventImplCopyWith<_$OnUpdatePostEventImpl> get copyWith =>
+      __$$OnUpdatePostEventImplCopyWithImpl<_$OnUpdatePostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -371,14 +373,16 @@ class _$OnUpdatePostEvent implements OnUpdatePostEvent {
 }
 
 abstract class OnUpdatePostEvent implements EditPostEvent {
-  const factory OnUpdatePostEvent(final String placeInfo,
-      final String description, final List<String> tags) = _$OnUpdatePostEvent;
+  const factory OnUpdatePostEvent(
+      final String placeInfo,
+      final String description,
+      final List<String> tags) = _$OnUpdatePostEventImpl;
 
   String get placeInfo;
   String get description;
   List<String> get tags;
   @JsonKey(ignore: true)
-  _$$OnUpdatePostEventCopyWith<_$OnUpdatePostEvent> get copyWith =>
+  _$$OnUpdatePostEventImplCopyWith<_$OnUpdatePostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -489,11 +493,11 @@ class _$EditPostStateCopyWithImpl<$Res, $Val extends EditPostState>
 }
 
 /// @nodoc
-abstract class _$$_EditPostStateCopyWith<$Res>
+abstract class _$$EditPostStateImplCopyWith<$Res>
     implements $EditPostStateCopyWith<$Res> {
-  factory _$$_EditPostStateCopyWith(
-          _$_EditPostState value, $Res Function(_$_EditPostState) then) =
-      __$$_EditPostStateCopyWithImpl<$Res>;
+  factory _$$EditPostStateImplCopyWith(
+          _$EditPostStateImpl value, $Res Function(_$EditPostStateImpl) then) =
+      __$$EditPostStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -510,11 +514,11 @@ abstract class _$$_EditPostStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_EditPostStateCopyWithImpl<$Res>
-    extends _$EditPostStateCopyWithImpl<$Res, _$_EditPostState>
-    implements _$$_EditPostStateCopyWith<$Res> {
-  __$$_EditPostStateCopyWithImpl(
-      _$_EditPostState _value, $Res Function(_$_EditPostState) _then)
+class __$$EditPostStateImplCopyWithImpl<$Res>
+    extends _$EditPostStateCopyWithImpl<$Res, _$EditPostStateImpl>
+    implements _$$EditPostStateImplCopyWith<$Res> {
+  __$$EditPostStateImplCopyWithImpl(
+      _$EditPostStateImpl _value, $Res Function(_$EditPostStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -531,7 +535,7 @@ class __$$_EditPostStateCopyWithImpl<$Res>
     Object? isPostUploading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_EditPostState(
+    return _then(_$EditPostStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -578,8 +582,8 @@ class __$$_EditPostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_EditPostState implements _EditPostState {
-  const _$_EditPostState(
+class _$EditPostStateImpl implements _EditPostState {
+  const _$EditPostStateImpl(
       {this.isLoading = false,
       this.postUuid = "",
       this.placeInfo = "",
@@ -637,7 +641,7 @@ class _$_EditPostState implements _EditPostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_EditPostState &&
+            other is _$EditPostStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.postUuid, postUuid) ||
@@ -674,8 +678,8 @@ class _$_EditPostState implements _EditPostState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_EditPostStateCopyWith<_$_EditPostState> get copyWith =>
-      __$$_EditPostStateCopyWithImpl<_$_EditPostState>(this, _$identity);
+  _$$EditPostStateImplCopyWith<_$EditPostStateImpl> get copyWith =>
+      __$$EditPostStateImplCopyWithImpl<_$EditPostStateImpl>(this, _$identity);
 }
 
 abstract class _EditPostState implements EditPostState {
@@ -689,7 +693,7 @@ abstract class _EditPostState implements EditPostState {
       final bool isReel,
       final bool isStoryMoment,
       final bool isPostUploading,
-      final String? errorMessage}) = _$_EditPostState;
+      final String? errorMessage}) = _$EditPostStateImpl;
 
   @override
   bool get isLoading;
@@ -713,6 +717,6 @@ abstract class _EditPostState implements EditPostState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_EditPostStateCopyWith<_$_EditPostState> get copyWith =>
+  _$$EditPostStateImplCopyWith<_$EditPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

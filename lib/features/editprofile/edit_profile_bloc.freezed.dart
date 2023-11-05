@@ -91,20 +91,20 @@ class _$EditProfilesEventCopyWithImpl<$Res, $Val extends EditProfilesEvent>
 }
 
 /// @nodoc
-abstract class _$$OnEditProfileEventCopyWith<$Res> {
-  factory _$$OnEditProfileEventCopyWith(_$OnEditProfileEvent value,
-          $Res Function(_$OnEditProfileEvent) then) =
-      __$$OnEditProfileEventCopyWithImpl<$Res>;
+abstract class _$$OnEditProfileEventImplCopyWith<$Res> {
+  factory _$$OnEditProfileEventImplCopyWith(_$OnEditProfileEventImpl value,
+          $Res Function(_$OnEditProfileEventImpl) then) =
+      __$$OnEditProfileEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String uid});
 }
 
 /// @nodoc
-class __$$OnEditProfileEventCopyWithImpl<$Res>
-    extends _$EditProfilesEventCopyWithImpl<$Res, _$OnEditProfileEvent>
-    implements _$$OnEditProfileEventCopyWith<$Res> {
-  __$$OnEditProfileEventCopyWithImpl(
-      _$OnEditProfileEvent _value, $Res Function(_$OnEditProfileEvent) _then)
+class __$$OnEditProfileEventImplCopyWithImpl<$Res>
+    extends _$EditProfilesEventCopyWithImpl<$Res, _$OnEditProfileEventImpl>
+    implements _$$OnEditProfileEventImplCopyWith<$Res> {
+  __$$OnEditProfileEventImplCopyWithImpl(_$OnEditProfileEventImpl _value,
+      $Res Function(_$OnEditProfileEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -112,7 +112,7 @@ class __$$OnEditProfileEventCopyWithImpl<$Res>
   $Res call({
     Object? uid = null,
   }) {
-    return _then(_$OnEditProfileEvent(
+    return _then(_$OnEditProfileEventImpl(
       null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
@@ -123,8 +123,8 @@ class __$$OnEditProfileEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnEditProfileEvent implements OnEditProfileEvent {
-  const _$OnEditProfileEvent(this.uid);
+class _$OnEditProfileEventImpl implements OnEditProfileEvent {
+  const _$OnEditProfileEventImpl(this.uid);
 
   @override
   final String uid;
@@ -138,7 +138,7 @@ class _$OnEditProfileEvent implements OnEditProfileEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnEditProfileEvent &&
+            other is _$OnEditProfileEventImpl &&
             (identical(other.uid, uid) || other.uid == uid));
   }
 
@@ -148,8 +148,8 @@ class _$OnEditProfileEvent implements OnEditProfileEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnEditProfileEventCopyWith<_$OnEditProfileEvent> get copyWith =>
-      __$$OnEditProfileEventCopyWithImpl<_$OnEditProfileEvent>(
+  _$$OnEditProfileEventImplCopyWith<_$OnEditProfileEventImpl> get copyWith =>
+      __$$OnEditProfileEventImplCopyWithImpl<_$OnEditProfileEventImpl>(
           this, _$identity);
 
   @override
@@ -232,19 +232,19 @@ class _$OnEditProfileEvent implements OnEditProfileEvent {
 }
 
 abstract class OnEditProfileEvent implements EditProfilesEvent {
-  const factory OnEditProfileEvent(final String uid) = _$OnEditProfileEvent;
+  const factory OnEditProfileEvent(final String uid) = _$OnEditProfileEventImpl;
 
   String get uid;
   @JsonKey(ignore: true)
-  _$$OnEditProfileEventCopyWith<_$OnEditProfileEvent> get copyWith =>
+  _$$OnEditProfileEventImplCopyWith<_$OnEditProfileEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnUpdateProfileEventCopyWith<$Res> {
-  factory _$$OnUpdateProfileEventCopyWith(_$OnUpdateProfileEvent value,
-          $Res Function(_$OnUpdateProfileEvent) then) =
-      __$$OnUpdateProfileEventCopyWithImpl<$Res>;
+abstract class _$$OnUpdateProfileEventImplCopyWith<$Res> {
+  factory _$$OnUpdateProfileEventImplCopyWith(_$OnUpdateProfileEventImpl value,
+          $Res Function(_$OnUpdateProfileEventImpl) then) =
+      __$$OnUpdateProfileEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
       {String email,
@@ -255,11 +255,11 @@ abstract class _$$OnUpdateProfileEventCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$OnUpdateProfileEventCopyWithImpl<$Res>
-    extends _$EditProfilesEventCopyWithImpl<$Res, _$OnUpdateProfileEvent>
-    implements _$$OnUpdateProfileEventCopyWith<$Res> {
-  __$$OnUpdateProfileEventCopyWithImpl(_$OnUpdateProfileEvent _value,
-      $Res Function(_$OnUpdateProfileEvent) _then)
+class __$$OnUpdateProfileEventImplCopyWithImpl<$Res>
+    extends _$EditProfilesEventCopyWithImpl<$Res, _$OnUpdateProfileEventImpl>
+    implements _$$OnUpdateProfileEventImplCopyWith<$Res> {
+  __$$OnUpdateProfileEventImplCopyWithImpl(_$OnUpdateProfileEventImpl _value,
+      $Res Function(_$OnUpdateProfileEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -271,7 +271,7 @@ class __$$OnUpdateProfileEventCopyWithImpl<$Res>
     Object? birthDate = null,
     Object? country = null,
   }) {
-    return _then(_$OnUpdateProfileEvent(
+    return _then(_$OnUpdateProfileEventImpl(
       email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -298,8 +298,8 @@ class __$$OnUpdateProfileEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUpdateProfileEvent implements OnUpdateProfileEvent {
-  const _$OnUpdateProfileEvent(
+class _$OnUpdateProfileEventImpl implements OnUpdateProfileEvent {
+  const _$OnUpdateProfileEventImpl(
       {required this.email,
       required this.username,
       required this.bio,
@@ -326,7 +326,7 @@ class _$OnUpdateProfileEvent implements OnUpdateProfileEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnUpdateProfileEvent &&
+            other is _$OnUpdateProfileEventImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.username, username) ||
                 other.username == username) &&
@@ -343,9 +343,10 @@ class _$OnUpdateProfileEvent implements OnUpdateProfileEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnUpdateProfileEventCopyWith<_$OnUpdateProfileEvent> get copyWith =>
-      __$$OnUpdateProfileEventCopyWithImpl<_$OnUpdateProfileEvent>(
-          this, _$identity);
+  _$$OnUpdateProfileEventImplCopyWith<_$OnUpdateProfileEventImpl>
+      get copyWith =>
+          __$$OnUpdateProfileEventImplCopyWithImpl<_$OnUpdateProfileEventImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -432,7 +433,7 @@ abstract class OnUpdateProfileEvent implements EditProfilesEvent {
       required final String username,
       required final String bio,
       required final String birthDate,
-      required final String country}) = _$OnUpdateProfileEvent;
+      required final String country}) = _$OnUpdateProfileEventImpl;
 
   String get email;
   String get username;
@@ -440,26 +441,28 @@ abstract class OnUpdateProfileEvent implements EditProfilesEvent {
   String get birthDate;
   String get country;
   @JsonKey(ignore: true)
-  _$$OnUpdateProfileEventCopyWith<_$OnUpdateProfileEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnUpdateProfileEventImplCopyWith<_$OnUpdateProfileEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$OnUpdateProfileImageEventCopyWith<$Res> {
-  factory _$$OnUpdateProfileImageEventCopyWith(
-          _$OnUpdateProfileImageEvent value,
-          $Res Function(_$OnUpdateProfileImageEvent) then) =
-      __$$OnUpdateProfileImageEventCopyWithImpl<$Res>;
+abstract class _$$OnUpdateProfileImageEventImplCopyWith<$Res> {
+  factory _$$OnUpdateProfileImageEventImplCopyWith(
+          _$OnUpdateProfileImageEventImpl value,
+          $Res Function(_$OnUpdateProfileImageEventImpl) then) =
+      __$$OnUpdateProfileImageEventImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ImageSource imageSource});
 }
 
 /// @nodoc
-class __$$OnUpdateProfileImageEventCopyWithImpl<$Res>
-    extends _$EditProfilesEventCopyWithImpl<$Res, _$OnUpdateProfileImageEvent>
-    implements _$$OnUpdateProfileImageEventCopyWith<$Res> {
-  __$$OnUpdateProfileImageEventCopyWithImpl(_$OnUpdateProfileImageEvent _value,
-      $Res Function(_$OnUpdateProfileImageEvent) _then)
+class __$$OnUpdateProfileImageEventImplCopyWithImpl<$Res>
+    extends _$EditProfilesEventCopyWithImpl<$Res,
+        _$OnUpdateProfileImageEventImpl>
+    implements _$$OnUpdateProfileImageEventImplCopyWith<$Res> {
+  __$$OnUpdateProfileImageEventImplCopyWithImpl(
+      _$OnUpdateProfileImageEventImpl _value,
+      $Res Function(_$OnUpdateProfileImageEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -467,7 +470,7 @@ class __$$OnUpdateProfileImageEventCopyWithImpl<$Res>
   $Res call({
     Object? imageSource = null,
   }) {
-    return _then(_$OnUpdateProfileImageEvent(
+    return _then(_$OnUpdateProfileImageEventImpl(
       null == imageSource
           ? _value.imageSource
           : imageSource // ignore: cast_nullable_to_non_nullable
@@ -478,8 +481,8 @@ class __$$OnUpdateProfileImageEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUpdateProfileImageEvent implements OnUpdateProfileImageEvent {
-  const _$OnUpdateProfileImageEvent(this.imageSource);
+class _$OnUpdateProfileImageEventImpl implements OnUpdateProfileImageEvent {
+  const _$OnUpdateProfileImageEventImpl(this.imageSource);
 
   @override
   final ImageSource imageSource;
@@ -493,7 +496,7 @@ class _$OnUpdateProfileImageEvent implements OnUpdateProfileImageEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnUpdateProfileImageEvent &&
+            other is _$OnUpdateProfileImageEventImpl &&
             (identical(other.imageSource, imageSource) ||
                 other.imageSource == imageSource));
   }
@@ -504,9 +507,9 @@ class _$OnUpdateProfileImageEvent implements OnUpdateProfileImageEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnUpdateProfileImageEventCopyWith<_$OnUpdateProfileImageEvent>
-      get copyWith => __$$OnUpdateProfileImageEventCopyWithImpl<
-          _$OnUpdateProfileImageEvent>(this, _$identity);
+  _$$OnUpdateProfileImageEventImplCopyWith<_$OnUpdateProfileImageEventImpl>
+      get copyWith => __$$OnUpdateProfileImageEventImplCopyWithImpl<
+          _$OnUpdateProfileImageEventImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -589,11 +592,11 @@ class _$OnUpdateProfileImageEvent implements OnUpdateProfileImageEvent {
 
 abstract class OnUpdateProfileImageEvent implements EditProfilesEvent {
   const factory OnUpdateProfileImageEvent(final ImageSource imageSource) =
-      _$OnUpdateProfileImageEvent;
+      _$OnUpdateProfileImageEventImpl;
 
   ImageSource get imageSource;
   @JsonKey(ignore: true)
-  _$$OnUpdateProfileImageEventCopyWith<_$OnUpdateProfileImageEvent>
+  _$$OnUpdateProfileImageEventImplCopyWith<_$OnUpdateProfileImageEventImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -711,11 +714,11 @@ class _$EditProfileStateCopyWithImpl<$Res, $Val extends EditProfileState>
 }
 
 /// @nodoc
-abstract class _$$_EditProfileStateCopyWith<$Res>
+abstract class _$$EditProfileStateImplCopyWith<$Res>
     implements $EditProfileStateCopyWith<$Res> {
-  factory _$$_EditProfileStateCopyWith(
-          _$_EditProfileState value, $Res Function(_$_EditProfileState) then) =
-      __$$_EditProfileStateCopyWithImpl<$Res>;
+  factory _$$EditProfileStateImplCopyWith(_$EditProfileStateImpl value,
+          $Res Function(_$EditProfileStateImpl) then) =
+      __$$EditProfileStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -733,11 +736,11 @@ abstract class _$$_EditProfileStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_EditProfileStateCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_EditProfileState>
-    implements _$$_EditProfileStateCopyWith<$Res> {
-  __$$_EditProfileStateCopyWithImpl(
-      _$_EditProfileState _value, $Res Function(_$_EditProfileState) _then)
+class __$$EditProfileStateImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$EditProfileStateImpl>
+    implements _$$EditProfileStateImplCopyWith<$Res> {
+  __$$EditProfileStateImplCopyWithImpl(_$EditProfileStateImpl _value,
+      $Res Function(_$EditProfileStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -755,7 +758,7 @@ class __$$_EditProfileStateCopyWithImpl<$Res>
     Object? birthDate = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_EditProfileState(
+    return _then(_$EditProfileStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -806,8 +809,8 @@ class __$$_EditProfileStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_EditProfileState implements _EditProfileState {
-  const _$_EditProfileState(
+class _$EditProfileStateImpl implements _EditProfileState {
+  const _$EditProfileStateImpl(
       {this.isLoading = false,
       this.image,
       this.allowUserInput = true,
@@ -861,7 +864,7 @@ class _$_EditProfileState implements _EditProfileState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_EditProfileState &&
+            other is _$EditProfileStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other.image, image) &&
@@ -899,8 +902,9 @@ class _$_EditProfileState implements _EditProfileState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_EditProfileStateCopyWith<_$_EditProfileState> get copyWith =>
-      __$$_EditProfileStateCopyWithImpl<_$_EditProfileState>(this, _$identity);
+  _$$EditProfileStateImplCopyWith<_$EditProfileStateImpl> get copyWith =>
+      __$$EditProfileStateImplCopyWithImpl<_$EditProfileStateImpl>(
+          this, _$identity);
 }
 
 abstract class _EditProfileState implements EditProfileState {
@@ -915,7 +919,7 @@ abstract class _EditProfileState implements EditProfileState {
       final String photoUrl,
       final String country,
       final String birthDate,
-      final String? errorMessage}) = _$_EditProfileState;
+      final String? errorMessage}) = _$EditProfileStateImpl;
 
   @override
   bool get isLoading;
@@ -941,6 +945,6 @@ abstract class _EditProfileState implements EditProfileState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_EditProfileStateCopyWith<_$_EditProfileState> get copyWith =>
+  _$$EditProfileStateImplCopyWith<_$EditProfileStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

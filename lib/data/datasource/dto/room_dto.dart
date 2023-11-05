@@ -1,5 +1,3 @@
-import 'package:pic_connect/data/datasource/dto/user_dto.dart';
-
 class RoomDTO {
   final String uid;
   final String type;

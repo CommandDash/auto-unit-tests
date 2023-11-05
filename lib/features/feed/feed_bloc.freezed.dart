@@ -88,22 +88,22 @@ class _$FeedEventCopyWithImpl<$Res, $Val extends FeedEvent>
 }
 
 /// @nodoc
-abstract class _$$OnLoadHomePostsEventCopyWith<$Res>
+abstract class _$$OnLoadHomePostsEventImplCopyWith<$Res>
     implements $FeedEventCopyWith<$Res> {
-  factory _$$OnLoadHomePostsEventCopyWith(_$OnLoadHomePostsEvent value,
-          $Res Function(_$OnLoadHomePostsEvent) then) =
-      __$$OnLoadHomePostsEventCopyWithImpl<$Res>;
+  factory _$$OnLoadHomePostsEventImplCopyWith(_$OnLoadHomePostsEventImpl value,
+          $Res Function(_$OnLoadHomePostsEventImpl) then) =
+      __$$OnLoadHomePostsEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userUid});
 }
 
 /// @nodoc
-class __$$OnLoadHomePostsEventCopyWithImpl<$Res>
-    extends _$FeedEventCopyWithImpl<$Res, _$OnLoadHomePostsEvent>
-    implements _$$OnLoadHomePostsEventCopyWith<$Res> {
-  __$$OnLoadHomePostsEventCopyWithImpl(_$OnLoadHomePostsEvent _value,
-      $Res Function(_$OnLoadHomePostsEvent) _then)
+class __$$OnLoadHomePostsEventImplCopyWithImpl<$Res>
+    extends _$FeedEventCopyWithImpl<$Res, _$OnLoadHomePostsEventImpl>
+    implements _$$OnLoadHomePostsEventImplCopyWith<$Res> {
+  __$$OnLoadHomePostsEventImplCopyWithImpl(_$OnLoadHomePostsEventImpl _value,
+      $Res Function(_$OnLoadHomePostsEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -111,7 +111,7 @@ class __$$OnLoadHomePostsEventCopyWithImpl<$Res>
   $Res call({
     Object? userUid = null,
   }) {
-    return _then(_$OnLoadHomePostsEvent(
+    return _then(_$OnLoadHomePostsEventImpl(
       null == userUid
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
@@ -122,8 +122,8 @@ class __$$OnLoadHomePostsEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadHomePostsEvent implements OnLoadHomePostsEvent {
-  const _$OnLoadHomePostsEvent(this.userUid);
+class _$OnLoadHomePostsEventImpl implements OnLoadHomePostsEvent {
+  const _$OnLoadHomePostsEventImpl(this.userUid);
 
   @override
   final String userUid;
@@ -137,7 +137,7 @@ class _$OnLoadHomePostsEvent implements OnLoadHomePostsEvent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnLoadHomePostsEvent &&
+            other is _$OnLoadHomePostsEventImpl &&
             (identical(other.userUid, userUid) || other.userUid == userUid));
   }
 
@@ -147,9 +147,10 @@ class _$OnLoadHomePostsEvent implements OnLoadHomePostsEvent {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnLoadHomePostsEventCopyWith<_$OnLoadHomePostsEvent> get copyWith =>
-      __$$OnLoadHomePostsEventCopyWithImpl<_$OnLoadHomePostsEvent>(
-          this, _$identity);
+  _$$OnLoadHomePostsEventImplCopyWith<_$OnLoadHomePostsEventImpl>
+      get copyWith =>
+          __$$OnLoadHomePostsEventImplCopyWithImpl<_$OnLoadHomePostsEventImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -210,14 +211,14 @@ class _$OnLoadHomePostsEvent implements OnLoadHomePostsEvent {
 
 abstract class OnLoadHomePostsEvent implements FeedEvent {
   const factory OnLoadHomePostsEvent(final String userUid) =
-      _$OnLoadHomePostsEvent;
+      _$OnLoadHomePostsEventImpl;
 
   @override
   String get userUid;
   @override
   @JsonKey(ignore: true)
-  _$$OnLoadHomePostsEventCopyWith<_$OnLoadHomePostsEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$OnLoadHomePostsEventImplCopyWith<_$OnLoadHomePostsEventImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -292,10 +293,11 @@ class _$FeedStateCopyWithImpl<$Res, $Val extends FeedState>
 }
 
 /// @nodoc
-abstract class _$$_FeedStateCopyWith<$Res> implements $FeedStateCopyWith<$Res> {
-  factory _$$_FeedStateCopyWith(
-          _$_FeedState value, $Res Function(_$_FeedState) then) =
-      __$$_FeedStateCopyWithImpl<$Res>;
+abstract class _$$FeedStateImplCopyWith<$Res>
+    implements $FeedStateCopyWith<$Res> {
+  factory _$$FeedStateImplCopyWith(
+          _$FeedStateImpl value, $Res Function(_$FeedStateImpl) then) =
+      __$$FeedStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -307,11 +309,11 @@ abstract class _$$_FeedStateCopyWith<$Res> implements $FeedStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_FeedStateCopyWithImpl<$Res>
-    extends _$FeedStateCopyWithImpl<$Res, _$_FeedState>
-    implements _$$_FeedStateCopyWith<$Res> {
-  __$$_FeedStateCopyWithImpl(
-      _$_FeedState _value, $Res Function(_$_FeedState) _then)
+class __$$FeedStateImplCopyWithImpl<$Res>
+    extends _$FeedStateCopyWithImpl<$Res, _$FeedStateImpl>
+    implements _$$FeedStateImplCopyWith<$Res> {
+  __$$FeedStateImplCopyWithImpl(
+      _$FeedStateImpl _value, $Res Function(_$FeedStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -323,7 +325,7 @@ class __$$_FeedStateCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_FeedState(
+    return _then(_$FeedStateImpl(
       authUserUid: null == authUserUid
           ? _value.authUserUid
           : authUserUid // ignore: cast_nullable_to_non_nullable
@@ -350,8 +352,8 @@ class __$$_FeedStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FeedState implements _FeedState {
-  const _$_FeedState(
+class _$FeedStateImpl implements _FeedState {
+  const _$FeedStateImpl(
       {this.authUserUid = "",
       final List<PostBO> posts = const [],
       final List<MomentsByUserBO> momentsByFollowedUsers = const [],
@@ -397,7 +399,7 @@ class _$_FeedState implements _FeedState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FeedState &&
+            other is _$FeedStateImpl &&
             (identical(other.authUserUid, authUserUid) ||
                 other.authUserUid == authUserUid) &&
             const DeepCollectionEquality().equals(other._posts, _posts) &&
@@ -421,8 +423,8 @@ class _$_FeedState implements _FeedState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FeedStateCopyWith<_$_FeedState> get copyWith =>
-      __$$_FeedStateCopyWithImpl<_$_FeedState>(this, _$identity);
+  _$$FeedStateImplCopyWith<_$FeedStateImpl> get copyWith =>
+      __$$FeedStateImplCopyWithImpl<_$FeedStateImpl>(this, _$identity);
 }
 
 abstract class _FeedState implements FeedState {
@@ -431,7 +433,7 @@ abstract class _FeedState implements FeedState {
       final List<PostBO> posts,
       final List<MomentsByUserBO> momentsByFollowedUsers,
       final bool isLoading,
-      final String? errorMessage}) = _$_FeedState;
+      final String? errorMessage}) = _$FeedStateImpl;
 
   @override
   String get authUserUid;
@@ -445,6 +447,6 @@ abstract class _FeedState implements FeedState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_FeedStateCopyWith<_$_FeedState> get copyWith =>
+  _$$FeedStateImplCopyWith<_$FeedStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

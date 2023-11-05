@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:pic_connect/domain/models/comment.dart';
 import 'package:pic_connect/utils/colors.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
 class CommentCard extends StatelessWidget {
-
   final CommentBO commentBO;
 
-  const CommentCard({
-    Key? key,
-    required this.commentBO
-  }) : super(key: key);
+  const CommentCard({Key? key, required this.commentBO}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,29 +38,28 @@ class CommentCard extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleMedium
-                                ?.copyWith(color: accentColor, fontWeight: FontWeight.bold)
-                        ),
+                                ?.copyWith(
+                                    color: accentColor,
+                                    fontWeight: FontWeight.bold)),
                         TextSpan(
-                          text: ' ${commentBO.text}',
+                            text: ' ${commentBO.text}',
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyLarge
-                                ?.copyWith(color: accentColor, fontWeight: FontWeight.w500)
-                        ),
+                                ?.copyWith(
+                                    color: accentColor,
+                                    fontWeight: FontWeight.w500)),
                       ],
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 4),
                     child: Text(
-                      DateFormat.yMMMd().format(
-                        commentBO.datePublished,
-                      ),
-                      style: Theme.of(context)
-                        .textTheme
-                        .bodySmall
-                        ?.copyWith(color: accentColor, fontWeight: FontWeight.w400)
-                    ),
+                        DateFormat.yMMMd().format(
+                          commentBO.datePublished,
+                        ),
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: accentColor, fontWeight: FontWeight.w400)),
                   )
                 ],
               ),

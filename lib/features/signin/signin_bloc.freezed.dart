@@ -95,22 +95,22 @@ class _$SignInEventCopyWithImpl<$Res, $Val extends SignInEvent>
 }
 
 /// @nodoc
-abstract class _$$OnDoSignInEventCopyWith<$Res>
+abstract class _$$OnDoSignInEventImplCopyWith<$Res>
     implements $SignInEventCopyWith<$Res> {
-  factory _$$OnDoSignInEventCopyWith(
-          _$OnDoSignInEvent value, $Res Function(_$OnDoSignInEvent) then) =
-      __$$OnDoSignInEventCopyWithImpl<$Res>;
+  factory _$$OnDoSignInEventImplCopyWith(_$OnDoSignInEventImpl value,
+          $Res Function(_$OnDoSignInEventImpl) then) =
+      __$$OnDoSignInEventImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String email, String password});
 }
 
 /// @nodoc
-class __$$OnDoSignInEventCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res, _$OnDoSignInEvent>
-    implements _$$OnDoSignInEventCopyWith<$Res> {
-  __$$OnDoSignInEventCopyWithImpl(
-      _$OnDoSignInEvent _value, $Res Function(_$OnDoSignInEvent) _then)
+class __$$OnDoSignInEventImplCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res, _$OnDoSignInEventImpl>
+    implements _$$OnDoSignInEventImplCopyWith<$Res> {
+  __$$OnDoSignInEventImplCopyWithImpl(
+      _$OnDoSignInEventImpl _value, $Res Function(_$OnDoSignInEventImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -119,7 +119,7 @@ class __$$OnDoSignInEventCopyWithImpl<$Res>
     Object? email = null,
     Object? password = null,
   }) {
-    return _then(_$OnDoSignInEvent(
+    return _then(_$OnDoSignInEventImpl(
       null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -134,10 +134,10 @@ class __$$OnDoSignInEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnDoSignInEvent
+class _$OnDoSignInEventImpl
     with DiagnosticableTreeMixin
     implements OnDoSignInEvent {
-  const _$OnDoSignInEvent(this.email, this.password);
+  const _$OnDoSignInEventImpl(this.email, this.password);
 
   @override
   final String email;
@@ -162,7 +162,7 @@ class _$OnDoSignInEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$OnDoSignInEvent &&
+            other is _$OnDoSignInEventImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password));
@@ -174,8 +174,9 @@ class _$OnDoSignInEvent
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$OnDoSignInEventCopyWith<_$OnDoSignInEvent> get copyWith =>
-      __$$OnDoSignInEventCopyWithImpl<_$OnDoSignInEvent>(this, _$identity);
+  _$$OnDoSignInEventImplCopyWith<_$OnDoSignInEventImpl> get copyWith =>
+      __$$OnDoSignInEventImplCopyWithImpl<_$OnDoSignInEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -236,7 +237,7 @@ class _$OnDoSignInEvent
 
 abstract class OnDoSignInEvent implements SignInEvent {
   const factory OnDoSignInEvent(final String email, final String password) =
-      _$OnDoSignInEvent;
+      _$OnDoSignInEventImpl;
 
   @override
   String get email;
@@ -244,7 +245,7 @@ abstract class OnDoSignInEvent implements SignInEvent {
   String get password;
   @override
   @JsonKey(ignore: true)
-  _$$OnDoSignInEventCopyWith<_$OnDoSignInEvent> get copyWith =>
+  _$$OnDoSignInEventImplCopyWith<_$OnDoSignInEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -320,11 +321,11 @@ class _$SignInStateCopyWithImpl<$Res, $Val extends SignInState>
 }
 
 /// @nodoc
-abstract class _$$_SignUpStateCopyWith<$Res>
+abstract class _$$SignUpStateImplCopyWith<$Res>
     implements $SignInStateCopyWith<$Res> {
-  factory _$$_SignUpStateCopyWith(
-          _$_SignUpState value, $Res Function(_$_SignUpState) then) =
-      __$$_SignUpStateCopyWithImpl<$Res>;
+  factory _$$SignUpStateImplCopyWith(
+          _$SignUpStateImpl value, $Res Function(_$SignUpStateImpl) then) =
+      __$$SignUpStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -336,11 +337,11 @@ abstract class _$$_SignUpStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SignUpStateCopyWithImpl<$Res>
-    extends _$SignInStateCopyWithImpl<$Res, _$_SignUpState>
-    implements _$$_SignUpStateCopyWith<$Res> {
-  __$$_SignUpStateCopyWithImpl(
-      _$_SignUpState _value, $Res Function(_$_SignUpState) _then)
+class __$$SignUpStateImplCopyWithImpl<$Res>
+    extends _$SignInStateCopyWithImpl<$Res, _$SignUpStateImpl>
+    implements _$$SignUpStateImplCopyWith<$Res> {
+  __$$SignUpStateImplCopyWithImpl(
+      _$SignUpStateImpl _value, $Res Function(_$SignUpStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -352,7 +353,7 @@ class __$$_SignUpStateCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$_SignUpState(
+    return _then(_$SignUpStateImpl(
       email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -379,8 +380,8 @@ class __$$_SignUpStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
-  const _$_SignUpState(
+class _$SignUpStateImpl with DiagnosticableTreeMixin implements _SignUpState {
+  const _$SignUpStateImpl(
       {this.email,
       this.password,
       this.isLoginSuccess = false,
@@ -421,7 +422,7 @@ class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpState &&
+            other is _$SignUpStateImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password) &&
@@ -440,8 +441,8 @@ class _$_SignUpState with DiagnosticableTreeMixin implements _SignUpState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
-      __$$_SignUpStateCopyWithImpl<_$_SignUpState>(this, _$identity);
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
+      __$$SignUpStateImplCopyWithImpl<_$SignUpStateImpl>(this, _$identity);
 }
 
 abstract class _SignUpState implements SignInState {
@@ -450,7 +451,7 @@ abstract class _SignUpState implements SignInState {
       final String? password,
       final bool isLoginSuccess,
       final bool isLoading,
-      final String? errorMessage}) = _$_SignUpState;
+      final String? errorMessage}) = _$SignUpStateImpl;
 
   @override
   String? get email;
@@ -464,6 +465,6 @@ abstract class _SignUpState implements SignInState {
   String? get errorMessage;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

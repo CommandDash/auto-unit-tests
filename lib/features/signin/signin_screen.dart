@@ -11,7 +11,19 @@ import 'package:pic_connect/utils/colors.dart';
 import 'package:pic_connect/utils/textfield_validation.dart';
 import 'package:pic_connect/utils/utils.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
+@Testcases([
+  'LoginScreen should show error snackbar when SignInBloc state has errorMessage',
+  'LoginScreen should call onLoginSuccess when SignInBloc state has isLoginSuccess as true',
+  'LoginScreen should show CommonScreenProgressIndicator when SignInBloc state has isLoading as true',
+  'LoginScreen should validate email input and show error when email is not valid',
+  'LoginScreen should validate password input and show error when password is not valid',
+  'LoginScreen should call onLoginClicked when SignIn button is pressed',
+  'LoginScreen should call onSignUpPressed when SignUp text is pressed',
+  'LoginScreen should show error snackbar when form validation fails on login button press',
+])
 class LoginScreen extends StatefulWidget {
   final VoidCallback onSignUpPressed;
 
@@ -48,8 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
           OnDoSignInEvent(_emailController.text, _passwordController.text));
     } else {
       showErrorSnackBar(
-          context: context,
-          message: _l10n.signInEmailAndPasswordNotValid);
+          context: context, message: _l10n.signInEmailAndPasswordNotValid);
     }
   }
 
@@ -69,7 +80,9 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     }, builder: (context, state) {
       return Scaffold(
+        key: const ValueKey("login_screen_scaffold"),
         body: Stack(
+          key: const ValueKey("login_screen_stack"),
           children: _buildScreenStack(state),
         ),
       );
@@ -77,10 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   List<Widget> _buildScreenStack(SignInState state) {
-    final screenStack = [
-      _buildScreenBackground(),
-      _buildScreenContent(state)
-    ];
+    final screenStack = [_buildScreenBackground(), _buildScreenContent(state)];
     if (state.isLoading) {
       screenStack.add(CommonScreenProgressIndicator(
         backgroundColor: blackColor.withOpacity(0.5),

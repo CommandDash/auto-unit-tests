@@ -9,7 +9,21 @@ import 'package:pic_connect/features/publications/publications_bloc.dart';
 import 'package:pic_connect/utils/colors.dart';
 import 'package:pic_connect/utils/utils.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+@Welltested()
+@Testcases([
+  'PublicationsScreen should show CommonScreenProgressIndicator when state.isLoading is true',
+  'PublicationsScreen should show EmptyStateWidget when state.postLen is 0',
+  'PublicationsScreen should show ListView with correct number of PostCard when state.postLen is not 0',
+  'PublicationsScreen should call onRefresh when RefreshIndicator is pulled',
+  "PublicationsScreen should call onShowCommentsByPost when PostCard's onShowCommentsByPost is triggered",
+  "PublicationsScreen should call onShowUserProfile when PostCard's onShowUserProfile is triggered",
+  "PublicationsScreen should call onEditPost when PostCard's onEditPost is triggered",
+  "PublicationsScreen should call onRefresh when PostCard's onPostDeleted is triggered",
+  'PublicationsScreen should show error snackbar when state.errorMessage is not null',
+  'PublicationsScreen should show correct title in AppBar',
+])
 class PublicationsScreen extends StatefulWidget {
   final Function(String postId) onShowCommentsByPost;
   final Function(String userUid) onShowUserProfile;
