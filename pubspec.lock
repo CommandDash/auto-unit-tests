@@ -1925,20 +1925,18 @@ packages:
   welltested:
     dependency: "direct dev"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "55e631e716e11c989a0206facb3ecc38a3e2aa41"
-      url: "https://github.com/Welltested-AI/welltested-cli.git"
-    source: git
+      name: welltested
+      sha256: "749dbac9c104f617d6b86a28834f8e1634514ef2da6a9eea01f79493160fcec4"
+      url: "https://pub.dev"
+    source: hosted
     version: "2.1.5"
   welltested_annotation:
-    dependency: "direct overridden"
+    dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: e016c6387b1498f703e65c2222aed408bb5c3c5e
-      url: "https://github.com/Welltested-AI/welltested_annotation.git"
-    source: git
+      name: welltested_annotation
+      sha256: "4177ac63ade38c9774e3269fc0752a03c08232d9aa452ba68e722887ce1be86b"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.1"
   win32:
     dependency: transitive

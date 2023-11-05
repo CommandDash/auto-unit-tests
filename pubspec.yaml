@@ -78,7 +78,8 @@ dependencies:
   uuid: ^3.0.5
   video_player: ^2.7.0
   video_thumbnail: ^0.5.3
-  visibility_detector: ^0.4.0+2  
+  visibility_detector: ^0.4.0+2
+  welltested_annotation: ^1.0.1
 
 dev_dependencies:
   build_runner: ^2.3.3
@@ -88,17 +89,12 @@ dev_dependencies:
     sdk: flutter
   freezed: ^2.4.1
   json_annotation: ^4.8.1
-  welltested:
-    git:
-      url: https://github.com/Welltested-AI/welltested-cli.git
-  bloc_test:
+  welltested: ^2.1.5
+  bloc_test: 
 
 dependency_overrides:
   extended_image: ^8.1.1
   http: ^1.1.0
-  welltested_annotation:
-    git:
-      url: https://github.com/Welltested-AI/welltested_annotation.git
 
 
 # For information on the generic Dart part of this file, see the
