@@ -1,3 +1,5 @@
+<a href="https://github.com/ibrahimbraochwala/auto-unit-tests/actions"><img src="https://github.com/[USER_NAME]/[REPO_NAME]/workflows/test/badge.svg" alt="Build Status"></a>
+
 # PicConnect - Explore and connect through photography.
 
 <img width="auto" align="left" src="screenshots/app_logo.png" />
