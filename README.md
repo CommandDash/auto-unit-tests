@@ -1,4 +1,4 @@
-<a href="https://github.com/Welltested-AI/auto-unit-tests/actions"><img src="https://github.com/Welltested-AI/auto-unit-tests/workflows/run-flutter-test/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/Welltested-AI/auto-unit-tests/actions"><img src="https://github.com/Welltested-AI/auto-unit-tests/workflows/run-unit-test/badge.svg" alt="Build Status"></a>
 
 # PicConnect - Explore and connect through photography.
 
